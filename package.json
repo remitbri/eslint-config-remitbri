@@ -1,0 +1,46 @@
+{
+  "name": "eslint-config-remitbri",
+  "version": "1.0.0",
+  "description": "Shareable ESLint configurations, by & for @remitbri. React-friendly.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remitbri/eslint-config-remitbri.git"
+  },
+  "keywords": [
+    "babel-eslint",
+    "es3",
+    "es5",
+    "es6",
+    "es7",
+    "es2015",
+    "eslint",
+    "eslint-plugin-react",
+    "eslint-config",
+    "javascript",
+    "js",
+    "ecmascript",
+    "lint",
+    "linter",
+    "react",
+    "remitbri"
+  ],
+  "author": "Rémi Gérard-Marchant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remitbri/eslint-config-remitbri/issues"
+  },
+  "homepage": "https://github.com/remitbri/eslint-config-remitbri#readme",
+  "dependencies": {
+    "deep-extend": "^0.4.0"
+  },
+  "peerDependencies" :{
+    "babel-eslint": "~4.0.10",
+    "eslint": "~1.2.0",
+    "eslint-plugin-react": "~3.2.3"
+  }
+}

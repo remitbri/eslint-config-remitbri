@@ -1,0 +1,31 @@
+/**
+ * This configuration is specific to IE8.
+ * @module ie8
+ */
+"use strict"
+
+var deepExtend = require("deep-extend")
+
+module.exports = deepExtend(
+  {
+    env : {
+      browser : true,
+    },
+  },
+  require("./es5"),
+  {
+    rules : {
+      // *** POSSIBLE ERRORS
+      // Disallow or Enforce Dangling Commas
+      "comma-dangle" : [2, "never"],
+
+      // *** VARIABLES
+      // Disallow Shadowing of Variables Inside of catch
+      "no-catch-shadow" : 2,
+
+      // *** STYLISTIC ISSUES
+      // Quoting Style for Property Names
+      "quote-props" : [2, "always"],
+    },
+  }
+)
