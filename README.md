@@ -55,7 +55,7 @@ This
  - adds rules related to Node.js
  - adds the `node` [environment](http://eslint.org/docs/user-guide/configuring#specifying-environments)
 
- It's not meant to be used on its own, rather with other configurations. E.g
+It's not meant to be used on its own, rather with other configurations. E.g
 
 ```json
 {
