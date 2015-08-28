@@ -35,9 +35,6 @@
     "url": "https://github.com/remitbri/eslint-config-remitbri/issues"
   },
   "homepage": "https://github.com/remitbri/eslint-config-remitbri#readme",
-  "dependencies": {
-    "deep-extend": "^0.4.0"
-  },
   "peerDependencies" :{
     "babel-eslint": "^4.1.0",
     "eslint": "~1.3.0",

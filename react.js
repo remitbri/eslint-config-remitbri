@@ -4,20 +4,18 @@
  */
 "use strict"
 
-var deepExtend = require("deep-extend")
-
-module.exports = deepExtend(
-  {
-    env : {
-      browser : true,
-    },
-    ecmaFeatures : {
-      jsx : true, // enable JSX
-      modules : true, // enable modules and global strict mode
-      experimentalObjectRestSpread : true,
-    },
+module.exports = {
+  extends : [
+    "remitbri/es6",
+    "remitbri/node",
+    "remitbri/rules/reactPlugin",
+  ],
+  env : {
+    browser : true,
   },
-  require("./es6"),
-  require("./node"),
-  require("./rules/reactPlugin")
-)
+  ecmaFeatures : {
+    jsx : true, // enable JSX
+    modules : true, // enable modules and global strict mode
+    experimentalObjectRestSpread : true,
+  },
+}

@@ -5,11 +5,7 @@
  */
 "use strict"
 
-var deepExtend = require("deep-extend")
-
-module.exports = deepExtend(
-  {
-    parser : "babel-eslint",
-  },
-  require("./es6")
-)
+module.exports = {
+  extends : "remitbri/es6",
+  parser : "babel-eslint",
+}

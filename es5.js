@@ -4,13 +4,13 @@
  */
 "use strict"
 
-var deepExtend = require("deep-extend")
-
-module.exports = deepExtend(
-  require("./rules/possibleErrors"),
-  require("./rules/bestPractices"),
-  require("./rules/strictMode"),
-  require("./rules/variables"),
-  require("./rules/stylisticIssues"),
-  require("./rules/legacy")
-)
+module.exports = {
+  extends : [
+    "remitbri/rules/possibleErrors",
+    "remitbri/rules/bestPractices",
+    "remitbri/rules/strictMode",
+    "remitbri/rules/variables",
+    "remitbri/rules/stylisticIssues",
+    "remitbri/rules/legacy",
+  ],
+}

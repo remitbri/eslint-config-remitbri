@@ -5,20 +5,16 @@
  */
 "use strict"
 
-var deepExtend = require("deep-extend")
-
-module.exports = deepExtend(
-  {
-    env : {
-      node : true,
-    },
-    ecmaFeatures : {
-      /*
-      true by default in the node environment
-
-      globalReturn : true, // allow return statements in the global scope
-      */
-    },
+module.exports = {
+  extends : "./rules/nodejs",
+  env : {
+    node : true,
   },
-  require("./rules/nodejs")
-)
+  ecmaFeatures : {
+    /*
+    **true by default in the node environment**
+
+    globalReturn : true, // allow return statements in the global scope
+    */
+  },
+}

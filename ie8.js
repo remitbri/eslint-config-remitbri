@@ -4,28 +4,22 @@
  */
 "use strict"
 
-var deepExtend = require("deep-extend")
-
-module.exports = deepExtend(
-  {
-    env : {
-      browser : true,
-    },
+module.exports = {
+  extends : "remitbri/es5",
+  env : {
+    browser : true,
   },
-  require("./es5"),
-  {
-    rules : {
-      // *** POSSIBLE ERRORS
-      // Disallow or Enforce Dangling Commas
-      "comma-dangle" : [2, "never"],
+  rules : {
+    // *** POSSIBLE ERRORS
+    // Disallow or Enforce Dangling Commas
+    "comma-dangle" : [2, "never"],
 
-      // *** VARIABLES
-      // Disallow Shadowing of Variables Inside of catch
-      "no-catch-shadow" : 2,
+    // *** VARIABLES
+    // Disallow Shadowing of Variables Inside of catch
+    "no-catch-shadow" : 2,
 
-      // *** STYLISTIC ISSUES
-      // Quoting Style for Property Names
-      "quote-props" : [2, "always"],
-    },
-  }
-)
+    // *** STYLISTIC ISSUES
+    // Quoting Style for Property Names
+    "quote-props" : [2, "always"],
+  },
+}
