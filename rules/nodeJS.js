@@ -1,5 +1,6 @@
 /**
- * These rules are specific to JavaScript running on Node.js.
+ * These rules are specific to JavaScript running on Node.js
+ * or using CommonJS in the browser.
  * @module rules/nodejs
  * @see {@link http://eslint.org/docs/rules/#nodejs}
  */
