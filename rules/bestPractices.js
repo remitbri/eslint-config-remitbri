@@ -100,6 +100,8 @@ module.exports = {
     "no-throw-literal" : 2,
     // Disallow Unused Expressions
     "no-unused-expressions" : 2,
+    // Disallow unncessary concatenation of strings
+    "no-useless-concat" : 2,
     // Disallow unnecessary .call() and .apply().
     "no-useless-call" : 2,
     // Disallow use of the void operator.
