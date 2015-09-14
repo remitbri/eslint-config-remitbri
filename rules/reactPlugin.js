@@ -11,7 +11,7 @@ module.exports = {
     // Prevent missing displayName in a React component definition
     "react/display-name" : [2, {acceptTranspilerName : true}],
     // Enforce boolean attributes notation in JSX
-    "react/jsx-boolean-value" : 2,
+    "react/jsx-boolean-value" : [2, "never"],
     // Validate closing bracket location in JSX
     "react/jsx-closing-bracket-location" : [2, {location : "tag-aligned"}],
     // Enforce or disallow spaces inside of curly braces in JSX attributes.

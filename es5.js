@@ -5,6 +5,7 @@
 "use strict"
 
 module.exports = {
+  parser : "espree",
   extends : [
     "remitbri/rules/possibleErrors",
     "remitbri/rules/bestPractices",

@@ -10,6 +10,8 @@ module.exports = {
   rules : {
     // Enforce Return After Callback
     "callback-return" : [2, ["callback", "cb", "next"]],
+    // Disallow require() outside of the top-level module scope
+    "global-require" : 2,
     // Enforce Callback Error Handling
     "handle-callback-err" : [2, "^(err|error|anySpecificError)$"],
     // Disallow Mixed Requires

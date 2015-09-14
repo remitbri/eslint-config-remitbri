@@ -35,6 +35,8 @@ module.exports = {
     "id-match" : 0,
     // Validate Indentation
     indent : [2, 2, {SwitchCase : 1, VariableDeclarator : 1}],
+    // Enforce JSX Quote Style
+    "jsx-quotes" : [2, "prefer-double"],
     // Enforce Property Spacing
     "key-spacing" : [2, {beforeColon : true, afterColon : true}],
     // Enforce empty lines around comments
@@ -65,6 +67,8 @@ module.exports = {
     "no-nested-ternary" : 2,
     // Disallow the use of the Object constructor
     "no-new-object" : 2,
+    // Disallow certain syntax
+    "no-restricted-syntax" : 0,
     // Disallow Spaces in Function Calls
     "no-spaced-func" : 2,
     // Disallow Ternary Operators
@@ -73,7 +77,7 @@ module.exports = {
     "no-trailing-spaces" : 2,
     // Disallow Dangling Underscores in Identifiers
     "no-underscore-dangle" : 1,
-    // Disallow boolean literals in conditional expressions
+    // Disallow conditional expressions that can be expressed with simpler constructs
     "no-unneeded-ternary" : 2,
     // Disallow or enforce spaces inside of curly braces in objects.
     "object-curly-spacing" : [2, "never"],
@@ -89,14 +93,18 @@ module.exports = {
     "quote-props" : [2, "as-needed"],
     // Enforce Quote Style
     quotes : [2, "double"],
+    // Require JSDoc comment
+    "require-jsdoc" : 1,
     // Enforce spacing before and after semicolons
     "semi-spacing" : [2, {before : false, after : true}],
-    // Enforce Semicolons
+    // Enforce or Disallow Semicolons
     semi : [2, "never"],
     // Variable Sorting
     "sort-vars" : 0,
     // Require or disallow spaces following keywords
     "space-after-keywords" : [2, "always"],
+    // Require or disallow spaces before keywords
+    "space-before-keywords" : [2, "always"],
     // Require Or Disallow Space Before Blocks
     "space-before-blocks" : [2, "always"],
     // Require or disallow a space before function parenthesis
