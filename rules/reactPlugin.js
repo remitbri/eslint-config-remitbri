@@ -10,6 +10,8 @@ module.exports = {
   rules : {
     // Prevent missing displayName in a React component definition
     "react/display-name" : [2, {acceptTranspilerName : true}],
+    // Forbid certain propTypes
+    "react/forbid-prop-types" : 2,
     // Enforce boolean attributes notation in JSX
     "react/jsx-boolean-value" : [2, "never"],
     // Validate closing bracket location in JSX
@@ -38,6 +40,8 @@ module.exports = {
     "react/jsx-uses-vars" : 2,
     // Prevent usage of dangerous JSX properties
     "react/no-danger" : 1,
+    // Prevent direct mutation of this.state
+    "react/no-direct-mutation-state" : 2,
     // Prevent usage of setState in componentDidMount
     "react/no-did-mount-set-state" : 2,
     // Prevent usage of setState in componentDidUpdate

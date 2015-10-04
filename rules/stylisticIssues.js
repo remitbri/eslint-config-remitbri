@@ -63,6 +63,8 @@ module.exports = {
     "no-mixed-spaces-and-tabs" : [2, false],
     // Disallows multiple blank lines
     "no-multiple-empty-lines" : [0, {max : 2}],
+    // Disallow use of negated expressions in conditions
+    "no-negated-condition" : 1,
     // Disallow Nested Ternaries
     "no-nested-ternary" : 2,
     // Disallow the use of the Object constructor

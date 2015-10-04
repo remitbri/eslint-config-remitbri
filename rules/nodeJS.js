@@ -15,7 +15,7 @@ module.exports = {
     // Enforce Callback Error Handling
     "handle-callback-err" : [2, "^(err|error|anySpecificError)$"],
     // Disallow Mixed Requires
-    "no-mixed-requires" : [2, false],
+    "no-mixed-requires" : [2, {grouping : false}],
     // Disallow new require
     "no-new-require" : 2,
     // Disallow string concatenation when using _dirname and _filename

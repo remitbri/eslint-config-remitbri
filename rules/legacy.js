@@ -12,7 +12,7 @@ module.exports = {
     // Limit Maximum Depth
     "max-depth" : [1, 3],
     // Limit Maximum Length of Line
-    "max-len" : [1, 80, 2, {ignoreComments : true, ignoreUrls : true}],
+    "max-len" : [1, 90, 2, {ignoreComments : true, ignoreUrls : true}],
     // Limit Maximum Number of Parameter
     "max-params" : [1, 4],
     // Limit Maximum Number of Statement
