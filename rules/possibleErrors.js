@@ -53,6 +53,8 @@ module.exports = {
     "no-regex-spaces" : 2,
     // Disallow Sparse Arrays
     "no-sparse-arrays" : 2,
+    // Avoid unexpected multiline expressions
+    "no-unexpected-multiline" : 2,
     // Disallow Unreachable Code
     "no-unreachable" : 2,
     // Require isNaN()
@@ -61,7 +63,5 @@ module.exports = {
     "valid-jsdoc" : 1,
     // Ensures that the results of typeof are compared against a valid string
     "valid-typeof" : 2,
-    // Avoid unexpected multiline expressions
-    "no-unexpected-multiline" : 2,
   },
 }

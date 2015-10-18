@@ -20,10 +20,10 @@ module.exports = {
     curly : [2, "all"],
     // Require Default Case in Switch Statements
     "default-case" : 2,
-    // Require Dot Notation
-    "dot-notation" : [2, {allowKeywords : true}],
     // Enforce newline before and after dot
     "dot-location" : [2, "property"],
+    // Require Dot Notation
+    "dot-notation" : [2, {allowKeywords : true}],
     // Require === and !==
     eqeqeq : [2, "smart"],
     // Require Guarding for-in
@@ -36,6 +36,8 @@ module.exports = {
     "no-div-regex" : 2,
     // Disallow return in else
     "no-else-return" : 2,
+    // Disallow empty destructuring patterns
+    "no-empty-pattern" : 2,
     // No empty labels
     "no-empty-label" : 2,
     // Disallow Null Comparisons
@@ -64,6 +66,8 @@ module.exports = {
     "no-lone-blocks" : 2,
     // Disallow Functions in Loops
     "no-loop-func" : 2,
+    // Disallow Magic Numbers
+    "no-magic-numbers" : 1,
     // Disallow multiple spaces
     "no-multi-spaces" : 2,
     // Disallow Multiline Strings

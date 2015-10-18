@@ -39,10 +39,10 @@ module.exports = {
     "jsx-quotes" : [2, "prefer-double"],
     // Enforce Property Spacing
     "key-spacing" : [2, {beforeColon : true, afterColon : true}],
-    // Enforce empty lines around comments
-    "lines-around-comment" : 0,
     // Disallow mixing CRLF and LF linebreaks
     "linebreak-style" : [2, "unix"],
+    // Enforce empty lines around comments
+    "lines-around-comment" : 0,
     // Set Maximum Depth of Nested Callbacks
     "max-nested-callbacks" : [2, 3],
     // Require Constructors to Use Initial Caps
@@ -105,12 +105,12 @@ module.exports = {
     "sort-vars" : 0,
     // Require or disallow spaces following keywords
     "space-after-keywords" : [2, "always"],
-    // Require or disallow spaces before keywords
-    "space-before-keywords" : [2, "always"],
     // Require Or Disallow Space Before Blocks
     "space-before-blocks" : [2, "always"],
     // Require or disallow a space before function parenthesis
     "space-before-function-paren" : [2, "never"],
+    // Require or disallow spaces before keywords
+    "space-before-keywords" : [2, "always"],
     // Disallow or enforce spaces inside of parentheses
     "space-in-parens" : [2, "never"],
     // Require Spaces Around Infix Operators
