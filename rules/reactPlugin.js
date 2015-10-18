@@ -52,6 +52,8 @@ module.exports = {
     "react/no-set-state" : 0,
     // Prevent usage of unknown DOM property (no-unknown-property)
     "react/no-unknown-property" : 2,
+    // Prefer es6 class instead of createClass for React Component
+    "react/prefer-es6-class" : 2,
     // Prevent missing props validation in a React component definition
     "react/prop-types" : 2,
     // Prevent missing React when using JSX
