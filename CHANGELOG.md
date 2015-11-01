@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+
+## [1.8.0] - 2015-11-01
 ### Added
 - `arrow-body-style` new rule from eslint v1.8.0
 - `no-arrow-condition` new rule from eslint v1.8.0
