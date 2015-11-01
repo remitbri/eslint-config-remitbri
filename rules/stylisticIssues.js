@@ -62,7 +62,7 @@ module.exports = {
     // Disallow mixed spaces and tabs for indentation
     "no-mixed-spaces-and-tabs" : [2, false],
     // Disallows multiple blank lines
-    "no-multiple-empty-lines" : [0, {max : 2}],
+    "no-multiple-empty-lines" : [2, {max : 3, maxEOF : 1}],
     // Disallow use of negated expressions in conditions
     "no-negated-condition" : 1,
     // Disallow Nested Ternaries

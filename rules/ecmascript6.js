@@ -7,6 +7,8 @@
 
 module.exports = {
   rules : {
+    // Require braces in arrow function body
+    "arrow-body-style" : [2, "as-needed"],
     // Require parens in arrow function arguments
     "arrow-parens" : [2, "always"],
     // Require space before/after arrow function's arrow
@@ -15,6 +17,8 @@ module.exports = {
     "constructor-super" : 2,
     // Enforce spacing around the * in generator functions
     "generator-star-spacing" : [2, {before : true, after : true}],
+    // Disallow arrow functions where a condition is expected
+    "no-arrow-condition" : 2,
     // Disallow modifying variables of class declarations
     "no-class-assign" : 2,
     // Disallow modifying variables that are declared using const
