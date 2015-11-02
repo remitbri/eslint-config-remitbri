@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+### Added
+- postinstall script (linux/osx) for development
+
 ### Changed
 - node config properly refering to nodeJS rules
 
