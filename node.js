@@ -6,7 +6,7 @@
 "use strict"
 
 module.exports = {
-  extends : "./rules/nodejs",
+  extends : "./rules/nodeJS",
   env : {
     node : true,
   },
