@@ -95,4 +95,4 @@ This
 }
 ```
 ## es7
-Since v2.0.0, the `es7` configuration has moved to its own module, `eslint-config-remitbri-es7`.
+Since v2.0.0, the `es7` configuration has moved to its own module, [`eslint-config-remitbri-es7`](https://github.com/remitbri/eslint-config-remitbri-es7).

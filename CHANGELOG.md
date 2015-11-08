@@ -4,6 +4,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+### Changed
+- `README.md` update
+
+## [2.0.2] - 2015-11-08
+### Changed
+- `postinstall` script removed
+- `test` script updated
 
 ## [2.0.1] - 2015-11-08
 ### Changed
