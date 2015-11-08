@@ -6,8 +6,7 @@
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
     "test": "npm run lint",
-    "deploy": "npm test && npm publish",
-    "postinstall": "ln -s .. node_modules/eslint-config-remitbri"
+    "deploy": "npm test && npm publish"
   },
   "repository": {
     "type": "git",
