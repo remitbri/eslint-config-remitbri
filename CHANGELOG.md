@@ -5,6 +5,10 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 
 ## [Unreleased]
 
+## [2.0.1] - 2015-11-08
+### Changed
+- `README.md` update
+
 ## [2.0.0] - 2015-11-08
 ### Added
 - `no-case-declarations` new rule from eslint v1.9.0
