@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
-    "test": "npm run lint",
+    "test": "function makefake() { local eslint=$(npm root)\"/eslint\"; if [ ! -d $eslint ]; then npm i eslint@1.9.0 ;fi; local fake=$(npm root)\"/eslint-config-remitbri\"; if [ ! -d $fake ]; then ln -s $(npm prefix) $fake; fi;} ; makefake ; npm run lint;",
     "deploy": "npm test && npm publish"
   },
   "repository": {
