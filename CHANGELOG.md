@@ -6,9 +6,11 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 ## [Unreleased]
 ### Added
 - `no-case-declarations` new rule from eslint v1.9.0
+- `react/jsx-no-bind` new rule from eslint-plugin-react v3.7.0
 
 ### Changed
-- Peer dependencies update, inc. eslint to v1.9.0
+- `react/jsx-closing-bracket-location` setting changed to `[2, {location : "line-aligned"}]`
+- Peer dependencies update, inc. eslint to v1.9.0 and eslint-plugin-react to v3.8.0
 
 
 ## [1.8.1] - 2015-11-03
