@@ -4,6 +4,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+### Added
+- `no-case-declarations` new rule from eslint v1.9.0
+
+### Changed
+- Peer dependencies update, inc. eslint to v1.9.0
+
 
 ## [1.8.1] - 2015-11-03
 ### Added

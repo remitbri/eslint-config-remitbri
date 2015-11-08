@@ -22,6 +22,8 @@ module.exports = {
     "react/jsx-indent-props" : [2, 2],
     // Limit maximum of props on a single line in JSX
     "react/jsx-max-props-per-line" : [2, {maximum : 1}],
+    // No .bind() or Arrow Functions in JSX Props
+    "react/jsx-no-bind" : 2,
     // Prevent duplicate properties in JSX
     "react/jsx-no-duplicate-props" : 2,
     // Prevent usage of unwrapped JSX strings

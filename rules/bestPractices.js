@@ -32,6 +32,8 @@ module.exports = {
     "no-alert" : 2,
     // Disallow Use of caller/callee
     "no-caller" : 2,
+    // Disallow lexical declarations in case/default clauses
+    "no-case-declarations" : 2,
     // Disallow Regexs That Look Like Division
     "no-div-regex" : 2,
     // Disallow return in else
