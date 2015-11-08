@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-remitbri",
-  "version": "1.8.1",
+  "version": "2.0.0",
   "description": "Shareable ESLint configurations, by & for @remitbri. React-friendly.",
   "main": "index.js",
   "scripts": {

@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+
+## [2.0.0] - 2015-11-08
 ### Added
 - `no-case-declarations` new rule from eslint v1.9.0
 - `react/jsx-no-bind` new rule from eslint-plugin-react v3.7.0
