@@ -95,9 +95,4 @@ This
 }
 ```
 ## es7
-This specifies [babel-eslint](https://npmjs.com/package/babel-eslint) as a replacement [parser](http://eslint.org/docs/user-guide/configuring#specifying-parser), so that ES7 experimental features don't flag as errors. It's not really meant to be used on its own. E.g.
-```json
-{
-  "extends" : ["remitbri/react", "remitbri/es7"]
-}
-```
+Since v2.0.0, the `es7` configuration has moved to its own module, `eslint-config-remitbri-es7`.
