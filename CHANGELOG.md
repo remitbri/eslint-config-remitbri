@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+### Added
+- `react/jsx-handler-names` new rule from eslint-plugin-react v3.11.0
+- `react/jsx-key` new rule from eslint-plugin-react v3.9.0
+- `react/jsx-pascal-case` new rule from eslint-plugin-react v3.10.0
 
 ## [2.0.3] - 2015-11-09
 ### Changed

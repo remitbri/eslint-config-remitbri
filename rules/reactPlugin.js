@@ -18,8 +18,12 @@ module.exports = {
     "react/jsx-closing-bracket-location" : [2, {location : "line-aligned"}],
     // Enforce or disallow spaces inside of curly braces in JSX attributes.
     "react/jsx-curly-spacing" : [2, "never"],
+    // Enforce event handler naming conventions in JSX
+    "react/jsx-handler-names" : 2,
     // Validate props indentation in JSX
     "react/jsx-indent-props" : [2, 2],
+    // Detect missing key prop
+    "react/jsx-key" : 2,
     // Limit maximum of props on a single line in JSX
     "react/jsx-max-props-per-line" : [2, {maximum : 1}],
     // No .bind() or Arrow Functions in JSX Props
@@ -32,6 +36,8 @@ module.exports = {
     "react/jsx-no-undef" : 2,
     /** DEPRECATED **/ // Enforce quote style for JSX attributes
     /** DEPRECATED **/ "react/jsx-quotes" : [0, "double"],
+    // Enforce PasalCase for user-defined JSX components
+    "react/jsx-pascal-case" : 2,
     // Enforce propTypes declarations alphabetical sorting
     "react/jsx-sort-prop-types" : 0,
     // Enforce props alphabetical sorting
