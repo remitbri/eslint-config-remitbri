@@ -43,8 +43,16 @@ module.exports = {
     "linebreak-style" : [2, "unix"],
     // Enforce empty lines around comments
     "lines-around-comment" : 0,
+    // Limit Maximum Depth
+    "max-depth" : [1, 3],
+    // Limit Maximum Length of Line
+    "max-len" : [1, 90, 2, {ignoreComments : true, ignoreUrls : true}],
     // Set Maximum Depth of Nested Callbacks
     "max-nested-callbacks" : [2, 3],
+    // Limit Maximum Number of Parameter
+    "max-params" : [1, 4],
+    // Limit Maximum Number of Statement
+    "max-statements" : [0, 10],
     // Require Constructors to Use Initial Caps
     "new-cap" : 2,
     // Require Parens for Constructors
@@ -53,6 +61,8 @@ module.exports = {
     "newline-after-var" : 0,
     // Disallow creation of dense arrays using the Array constructor
     "no-array-constructor" : 2,
+    // Disallow Bitwise Operators
+    "no-bitwise" : 2,
     // Disallow continue
     "no-continue" : 2,
     // Disallows comments after code. Comments must come on their own lines
@@ -69,6 +79,8 @@ module.exports = {
     "no-nested-ternary" : 2,
     // Disallow the use of the Object constructor
     "no-new-object" : 2,
+    // Disallow ++ and --
+    "no-plusplus" : 0,
     // Disallow certain syntax
     "no-restricted-syntax" : 0,
     // Disallow Spaces in Function Calls

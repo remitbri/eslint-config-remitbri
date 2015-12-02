@@ -12,6 +12,5 @@ module.exports = {
     "remitbri/rules/strictMode",
     "remitbri/rules/variables",
     "remitbri/rules/stylisticIssues",
-    "remitbri/rules/legacy",
   ],
 }

@@ -12,6 +12,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 ### Changed
 - `radix` setting changed to `[2, "as-needed"]` in "bestPractices", and added with `[2, "always"]` in "ie8"
 - Peer dependencies update, inc. eslint to v1.10.3 and eslint-plugin-react to v3.11.2
+- `legacy` rules moved to `stylistic issues`
 
 
 ## [2.0.3] - 2015-11-09

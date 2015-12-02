@@ -30,7 +30,7 @@ Other than those specified in the available configurations, no language option (
 
 # Available configurations
 ## es5
-This is a collection of [rules](http://eslint.org/docs/rules/) regarding possible errors, best practices, strict mode, variables, stylistic issues and legacy.
+This is a collection of [rules](http://eslint.org/docs/rules/) regarding possible errors, best practices, strict mode, variables and stylistic issues.
 
 ```json
 {
