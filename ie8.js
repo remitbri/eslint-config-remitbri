@@ -14,6 +14,10 @@ module.exports = {
     // Disallow or Enforce Dangling Commas
     "comma-dangle" : [2, "never"],
 
+    // *** BEST PRACTICES
+    // Require Radix Parameter
+    radix : [2, "always"],
+
     // *** VARIABLES
     // Disallow Shadowing of Variables Inside of catch
     "no-catch-shadow" : 2,

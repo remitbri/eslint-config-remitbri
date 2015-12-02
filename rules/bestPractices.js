@@ -120,7 +120,7 @@ module.exports = {
     // No with Statements
     "no-with" : 2,
     // Require Radix Parameter
-    radix : 2,
+    radix : [2, "as-needed"],
     // Require Variable Declarations to be at the top of their scope
     "vars-on-top" : 0,
     // Require IIFEs to be Wrapped

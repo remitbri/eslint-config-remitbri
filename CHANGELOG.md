@@ -9,6 +9,9 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `react/jsx-key` new rule from eslint-plugin-react v3.9.0
 - `react/jsx-pascal-case` new rule from eslint-plugin-react v3.10.0
 
+### Changed
+- `radix` setting changed to `[2, "as-needed"]` in "bestPractices", and added with `[2, "always"]` in "ie8"
+
 ## [2.0.3] - 2015-11-09
 ### Changed
 - `README.md` update
