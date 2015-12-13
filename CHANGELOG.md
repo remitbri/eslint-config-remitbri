@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+
+
+## [3.0.0] - 2015-12-03
 ### Added
 - `react/jsx-handler-names` new rule from eslint-plugin-react v3.11.0
 - `react/jsx-key` new rule from eslint-plugin-react v3.9.0
@@ -19,14 +22,17 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 ### Changed
 - `README.md` update
 
+
 ## [2.0.2] - 2015-11-08
 ### Changed
 - `postinstall` script removed
 - `test` script updated
 
+
 ## [2.0.1] - 2015-11-08
 ### Changed
 - `README.md` update
+
 
 ## [2.0.0] - 2015-11-08
 ### Added
@@ -46,6 +52,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 ### Changed
 - node config properly refering to nodeJS rules
 
+
 ## [1.8.0] - 2015-11-01
 ### Added
 - `arrow-body-style` new rule from eslint v1.8.0
@@ -63,6 +70,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 
 ### Changed
 - Peer dependencies update, inc. eslint-plugin-react to v3.6.1
+
 
 ## [1.6.0] - 2015-10-18
 ### Added
@@ -85,12 +93,14 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `max-len` rule settings modified
 - `no-mixed-requires` configuration declaration changed with eslint v1.6.0
 
+
 ## [1.4.0] - 2015-09-20
 ### Changed
 - Peer dependencies update, inc. eslint to v1.5.0 and eslint-plugin-react to v3.4.2
 
 ### Deprecated
 - `react/jsx-quotes` deprecated in eslint-plugin-react v3.4.0
+
 
 ## [1.3.0] - 2015-09-14
 ### Added
@@ -106,6 +116,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - Documentation improvement
 - Peer dependencies update, inc. eslint to v1.4.1 and eslint-plugin-react to v3.3.2
 
+
 ## [1.2.0] - 2015-08-29
 ### Added
 - `no-useless-concat` new rule from eslint v1.3.0
@@ -115,6 +126,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `README.md` and documentation improvement
 - `deep-extend` dependency removed
 - Peer dependencies update, inc. eslint to v1.3.0
+
 
 ## [1.1.0] - 2015-08-27
 ### Added
