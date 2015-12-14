@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+
+
+## [3.0.1] - 2015-12-14
 ### Changed
 - Peer dependencies update, inc. eslint-plugin-react to v3.11.3
 
