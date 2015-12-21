@@ -4,8 +4,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+### Added
+- `react/no-deprecated` new rule from eslint-plugin-react v3.12.0
+- `react/no-is-mounted` new rule from eslint-plugin-react v3.12.0
+
 ### Changed
- - eslint as a dev dependency
+- "react/prefer-es6-class" setting more explicit
+- eslint as a dev dependency
+- Peer dependencies update, inc. eslint-plugin-react to v3.12.0
+
 
 
 ## [3.0.1] - 2015-12-14

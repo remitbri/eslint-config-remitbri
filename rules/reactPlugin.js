@@ -48,12 +48,16 @@ module.exports = {
     "react/jsx-uses-vars" : 2,
     // Prevent usage of dangerous JSX properties
     "react/no-danger" : 1,
-    // Prevent direct mutation of this.state
-    "react/no-direct-mutation-state" : 2,
+    // Prevent usage of deprecated methods
+    "react/no-deprecated" : 2,
     // Prevent usage of setState in componentDidMount
     "react/no-did-mount-set-state" : 2,
     // Prevent usage of setState in componentDidUpdate
     "react/no-did-update-set-state" : 2,
+    // Prevent direct mutation of this.state
+    "react/no-direct-mutation-state" : 2,
+    // Prevent usage of isMounted
+    "react/no-is-mounted" : 2,
     // Prevent multiple component definition per file
     "react/no-multi-comp" : 2,
     // Prevent usage of setState
@@ -61,7 +65,7 @@ module.exports = {
     // Prevent usage of unknown DOM property (no-unknown-property)
     "react/no-unknown-property" : 2,
     // Prefer es6 class instead of createClass for React Component
-    "react/prefer-es6-class" : 2,
+    "react/prefer-es6-class" : [2, "always"],
     // Prevent missing props validation in a React component definition
     "react/prop-types" : 2,
     // Prevent missing React when using JSX
