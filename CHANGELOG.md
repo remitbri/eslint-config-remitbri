@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+
+
+## [3.1.0] - 2015-12-21
 ### Added
 - `react/no-deprecated` new rule from eslint-plugin-react v3.12.0
 - `react/no-is-mounted` new rule from eslint-plugin-react v3.12.0
