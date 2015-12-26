@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+
+
+## [3.2.0] - 2015-12-26
 ### Added
 - `react/no-string-refs` new rule from eslint-plugin-react v3.13.0
 
