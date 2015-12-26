@@ -62,9 +62,11 @@ module.exports = {
     "react/no-multi-comp" : 2,
     // Prevent usage of setState
     "react/no-set-state" : 0,
+    // Prevent using string references
+    "react/no-string-refs" : 2,
     // Prevent usage of unknown DOM property (no-unknown-property)
     "react/no-unknown-property" : 2,
-    // Prefer es6 class instead of createClass for React Component
+    // Enforce ES5 or ES6 class for React Components
     "react/prefer-es6-class" : [2, "always"],
     // Prevent missing props validation in a React component definition
     "react/prop-types" : 2,
