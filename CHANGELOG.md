@@ -7,6 +7,9 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 
 
 ## [3.3.0] - 2016-01-10
+### Changed
+- Peer dependencies loosened
+
 ### Added
 - `react/jsx-indent` new rule from eslint-plugin-react v3.14.0
 - pragma specified for eslint-plugin-react
