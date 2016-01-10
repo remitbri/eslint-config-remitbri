@@ -20,6 +20,8 @@ module.exports = {
     "react/jsx-curly-spacing" : [2, "never"],
     // Enforce event handler naming conventions in JSX
     "react/jsx-handler-names" : 2,
+    // Validate JSX indentation
+    "react/jsx-indent" : [2, 2],
     // Validate props indentation in JSX
     "react/jsx-indent-props" : [2, 2],
     // Detect missing key prop

@@ -10,6 +10,11 @@ module.exports = {
     "remitbri/node",
     "remitbri/rules/reactPlugin",
   ],
+  settings : {
+    react : {
+      pragma : "React",
+    },
+  },
   env : {
     browser : true,
   },
