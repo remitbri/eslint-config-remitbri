@@ -18,6 +18,8 @@ module.exports = {
     "react/jsx-closing-bracket-location" : [2, {location : "line-aligned"}],
     // Enforce or disallow spaces inside of curly braces in JSX attributes.
     "react/jsx-curly-spacing" : [2, "never"],
+    // Enforce or disallow spaces around equal signs in JSX attributes
+    "react/jsx-equals-spacing" : [2, "never"],
     // Enforce event handler naming conventions in JSX
     "react/jsx-handler-names" : 2,
     // Validate JSX indentation

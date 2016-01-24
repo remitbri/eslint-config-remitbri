@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+### Added
+- `react/jsx-equals-spacing` new rule from eslint-plugin-react v3.16.0
+
+### Changed
+- Peer dependencies update, inc. eslint-plugin-react to v3.16.1
 
 
 ## [3.3.2] - 2016-01-17
