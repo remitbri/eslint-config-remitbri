@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+
+
+
+## [4.0.1] - 2016-04-16
 ### Changed
 - modification of `maxEOF` value in `no-multiple-empty-lines`
 - changelog fix
