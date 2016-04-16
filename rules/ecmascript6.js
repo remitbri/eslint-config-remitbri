@@ -8,40 +8,54 @@
 module.exports = {
   rules : {
     // Require braces in arrow function body
-    "arrow-body-style" : [2, "as-needed"],
+    "arrow-body-style" : ["error", "as-needed"],
     // Require parens in arrow function arguments
-    "arrow-parens" : [2, "always"],
+    "arrow-parens" : ["error", "always"],
     // Require space before/after arrow function's arrow
-    "arrow-spacing" : [2, {before : true, after : true}],
+    "arrow-spacing" : ["error", {before : true, after : true}],
     // Verify calls of super() in constructors
-    "constructor-super" : 2,
+    "constructor-super" : "error",
     // Enforce spacing around the * in generator functions
-    "generator-star-spacing" : [2, {before : true, after : true}],
-    // Disallow arrow functions where a condition is expected
-    "no-arrow-condition" : 2,
+    "generator-star-spacing" : ["error", {before : true, after : false}],
     // Disallow modifying variables of class declarations
-    "no-class-assign" : 2,
+    "no-class-assign" : "error",
+    // Disallow arrow functions where they could be confused with comparisons (
+    "no-confusing-arrow" : ["error", {allowParens : true}],
     // Disallow modifying variables that are declared using const
-    "no-const-assign" : 2,
+    "no-const-assign" : "error",
     // Disallow duplicate name in class members
-    "no-dupe-class-members" : 2,
+    "no-dupe-class-members" : "error",
+    // Disallow duplicate imports
+    "no-duplicate-imports" : "error",
+    // Disallow Symbol Constructor
+    "no-new-symbol" : "error",
+    // Disallow specific imports
+    "no-restricted-imports" : "off",
     // Disallow use of this/super before calling super() in constructors.
-    "no-this-before-super" : 2,
-    // require let or const instead of var
-    "no-var" : 2,
+    "no-this-before-super" : "error",
+    // Disallow unnecessary constructor
+    "no-useless-constructor" : "error",
+    // require `let` or `const` instead of `var`
+    "no-var" : "error",
     // Require Object Literal Shorthand Syntax
-    "object-shorthand" : [2, "always"],
+    "object-shorthand" : ["error", "always"],
     // Suggest using arrow functions as callbacks.
-    "prefer-arrow-callback" : 2,
+    "prefer-arrow-callback" : "error",
     // Suggest using const
-    "prefer-const" : 2,
+    "prefer-const" : ["error", {destructuring : "any"}],
     // Suggest using Reflect methods where applicable
-    "prefer-reflect" : 2,
+    "prefer-reflect" : "error",
+    // Suggest using the rest parameters instead of arguments
+    "prefer-rest-params" : "error",
     // Suggest using the spread operator instead of .apply().
-    "prefer-spread" : 2,
+    "prefer-spread" : "error",
     // Suggest using template literals instead of string concatenation.
-    "prefer-template" : 2,
+    "prefer-template" : "error",
     // Disallow generator functions that do not have yield
-    "require-yield" : 2,
+    "require-yield" : "error",
+    // Enforce Usage of Spacing in Template Strings
+    "template-curly-spacing" : ["error", "never"],
+    // Enforce spacing around the `*` in `yield*` expressions
+    "yield-star-spacing" : ["error", {before : false, after : true}],
   },
 }

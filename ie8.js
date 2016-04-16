@@ -6,24 +6,29 @@
 
 module.exports = {
   extends : "remitbri/es5",
+  parserOptions : {
+    // set to 3, 5 (default), 6, or 7 to specify the version of ECMAScript you want to use
+    ecmaVersion : 3,
+  },
   env : {
     browser : true,
   },
   rules : {
-    // *** POSSIBLE ERRORS
+    // *** POSSIBLE "error"S
     // Disallow or Enforce Dangling Commas
-    "comma-dangle" : [2, "never"],
+    "comma-dangle" : ["error", "never"],
 
     // *** BEST PRACTICES
     // Require Radix Parameter
-    radix : [2, "always"],
+    "dot-notation" : ["error", {allowKeywords : false}],
+    radix : ["error", "always"],
 
     // *** VARIABLES
     // Disallow Shadowing of Variables Inside of catch
-    "no-catch-shadow" : 2,
+    "no-catch-shadow" : "error",
 
     // *** STYLISTIC ISSUES
     // Quoting Style for Property Names
-    "quote-props" : [2, "always"],
+    "quote-props" : ["error", "always"],
   },
 }

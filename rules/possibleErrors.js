@@ -8,60 +8,60 @@
 module.exports = {
   rules : {
     // Disallow or Enforce Dangling Commas
-    "comma-dangle" : [2, "always-multiline"],
+    "comma-dangle" : ["error", "always-multiline"],
     // Disallow Assignment in Conditional Statements
-    "no-cond-assign" : 2,
+    "no-cond-assign" : "error",
     // Disallow Use of console
-    "no-console" : 2,
+    "no-console" : "error",
     // Disallow use of constant expressions in conditions
-    "no-constant-condition" : 2,
+    "no-constant-condition" : "error",
     // Disallow Controls Characters in Regular Expressions
-    "no-control-regex" : 2,
+    "no-control-regex" : "error",
     // Disallow debugger
-    "no-debugger" : 2,
+    "no-debugger" : "error",
     // No duplicate arguments
-    "no-dupe-args" : 2,
+    "no-dupe-args" : "error",
     // Disallow Duplicate Keys
-    "no-dupe-keys" : 2,
+    "no-dupe-keys" : "error",
     // Rule to disallow a duplicate case label
-    "no-duplicate-case" : 2,
+    "no-duplicate-case" : "error",
     // Disallow Empty Character Classes
-    "no-empty-character-class" : 2,
+    "no-empty-character-class" : "error",
     // Disallow Empty Block Statements
-    "no-empty" : 2,
+    "no-empty" : ["error", {allowEmptyCatch : true}],
     // Disallow Assignment of the Exception Parameter
-    "no-ex-assign" : 2,
+    "no-ex-assign" : "error",
     // Disallow Extra Boolean Casts
-    "no-extra-boolean-cast" : 2,
+    "no-extra-boolean-cast" : "error",
     // Disallow Extra Parens
-    "no-extra-parens" : [2, "functions"],
+    "no-extra-parens" : ["error", "functions"],
     // Disallow Extra Semicolons
-    "no-extra-semi" : 2,
+    "no-extra-semi" : "error",
     // Disallow Function Assignment
-    "no-func-assign" : 2,
+    "no-func-assign" : "error",
     // Declarations in Program or Function Body
-    "no-inner-declarations" : [2, "both"],
+    "no-inner-declarations" : ["error", "both"],
     // Disallow Invalid Regular Expressions
-    "no-invalid-regexp" : 2,
+    "no-invalid-regexp" : "error",
     // No irregular whitespace
-    "no-irregular-whitespace" : 2,
-    // Disallow negated left operand of in operator
-    "no-negated-in-lhs" : 2,
+    "no-irregular-whitespace" : "error",
+    // Disallow negated left operand of `in` operator
+    "no-negated-in-lhs" : "error",
     // Disallow Global Object Function Calls
-    "no-obj-calls" : 2,
+    "no-obj-calls" : "error",
     // Disallow Spaces in Regular Expressions
-    "no-regex-spaces" : 2,
+    "no-regex-spaces" : "error",
     // Disallow Sparse Arrays
-    "no-sparse-arrays" : 2,
+    "no-sparse-arrays" : "error",
     // Avoid unexpected multiline expressions
-    "no-unexpected-multiline" : 2,
+    "no-unexpected-multiline" : "error",
     // Disallow Unreachable Code
-    "no-unreachable" : 2,
+    "no-unreachable" : "error",
     // Require isNaN()
-    "use-isnan" : 2,
+    "use-isnan" : "error",
     // Validates JSDoc comments are syntactically correct
-    "valid-jsdoc" : 1,
+    "valid-jsdoc" : ["warn", {requireReturn : false}],
     // Ensures that the results of typeof are compared against a valid string
-    "valid-typeof" : 2,
+    "valid-typeof" : "error",
   },
 }

@@ -9,123 +9,135 @@
 module.exports = {
   rules : {
     // Enforces getter/setter pairs in objects
-    "accessor-pairs" : [2, {getWithoutSet : true}],
+    "accessor-pairs" : ["error", {getWithoutSet : true}],
+    // Enforces return statements in callbacks of array's methods (
+    "array-callback-return" : "error",
     // Treat var as Block Scoped
-    "block-scoped-var" : 2,
+    "block-scoped-var" : "error",
     // Limit Cyclomatic Complexity
-    complexity : [2, 5],
+    complexity : ["error", {max : 5}],
     // Require Consistent Returns
-    "consistent-return" : 2,
+    "consistent-return" : "error",
     // Require Following Curly Brace Conventions
-    curly : [2, "all"],
+    curly : ["error", "all"],
     // Require Default Case in Switch Statements
-    "default-case" : 2,
+    "default-case" : "error",
     // Enforce newline before and after dot
-    "dot-location" : [2, "property"],
+    "dot-location" : ["error", "property"],
     // Require Dot Notation
-    "dot-notation" : [2, {allowKeywords : true}],
+    "dot-notation" : ["error", {allowKeywords : true}],
     // Require === and !==
-    eqeqeq : [2, "smart"],
+    eqeqeq : ["error", "smart"],
     // Require Guarding for-in
-    "guard-for-in" : 1,
+    "guard-for-in" : "warn",
     // Disallow Use of Alert
-    "no-alert" : 2,
+    "no-alert" : "error",
     // Disallow Use of caller/callee
-    "no-caller" : 2,
+    "no-caller" : "error",
     // Disallow lexical declarations in case/default clauses
-    "no-case-declarations" : 2,
+    "no-case-declarations" : "error",
     // Disallow Regexs That Look Like Division
-    "no-div-regex" : 2,
-    // Disallow return in else
-    "no-else-return" : 2,
+    "no-div-regex" : "error",
+    // Disallow return before else
+    "no-else-return" : "error",
+    // Disallow empty functions
+    "no-empty-function" : "error",
     // Disallow empty destructuring patterns
-    "no-empty-pattern" : 2,
-    // No empty labels
-    "no-empty-label" : 2,
+    "no-empty-pattern" : "error",
     // Disallow Null Comparisons
-    "no-eq-null" : 1,
+    "no-eq-null" : "warn",
     // Disallow eval()
-    "no-eval" : 2,
+    "no-eval" : "error",
     // Disallow Extending of Native Objects
-    "no-extend-native" : 2,
+    "no-extend-native" : "error",
     // Disallow unnecessary function binding
-    "no-extra-bind" : 2,
+    "no-extra-bind" : "error",
+    // Disallow Unnecessary Labels
+    "no-extra-label" : "error",
     // Disallow Case Statement Fallthrough
-    "no-fallthrough" : 2,
+    "no-fallthrough" : "error",
     // Disallow Floating Decimals
-    "no-floating-decimal" : 2,
+    "no-floating-decimal" : "error",
     // Disallow the type conversion with shorter notations.
-    "no-implicit-coercion" : 2,
+    "no-implicit-coercion" : "error",
+    // Disallow var and Named Functions in Global Scope
+    "no-implicit-globals" : "error",
     // Disallow Implied eval()
-    "no-implied-eval" : 2,
+    "no-implied-eval" : "error",
     // Disallow this keywords outside of classes or class-like objects
-    "no-invalid-this" : 2,
+    "no-invalid-this" : "error",
     // Disallow Iterator
-    "no-iterator" : 2,
+    "no-iterator" : "error",
     // Disallow Labeled Statements
-    "no-labels" : 2,
+    "no-labels" : ["error", {allowLoop : true, allowSwitch : true}],
     // Disallow Unnecessary Nested Blocks
-    "no-lone-blocks" : 2,
+    "no-lone-blocks" : "error",
     // Disallow Functions in Loops
-    "no-loop-func" : 2,
+    "no-loop-func" : "error",
     // Disallow Magic Numbers
-    "no-magic-numbers" : 1,
+    "no-magic-numbers" : ["warn", {detectObjects : false}],
     // Disallow multiple spaces
-    "no-multi-spaces" : 2,
+    "no-multi-spaces" : "error",
     // Disallow Multiline Strings
-    "no-multi-str" : 2,
+    "no-multi-str" : "error",
     // Disallow Reassignment of Native Objects
-    "no-native-reassign" : 2,
-    // Disallow Function Constructor
-    "no-new-func" : 2,
-    // Disallow Primitive Wrapper Instances
-    "no-new-wrappers" : 2,
+    "no-native-reassign" : "error",
     // Disallow new For Side Effects
-    "no-new" : 2,
-    // Disallow Octal Escapes
-    "no-octal-escape" : 2,
+    "no-new" : "error",
+    // Disallow Function Constructor
+    "no-new-func" : "error",
+    // Disallow Primitive Wrapper Instances
+    "no-new-wrappers" : "error",
     // Disallow Octal Literals
-    "no-octal" : 2,
+    "no-octal" : "error",
+    // Disallow Octal Escapes
+    "no-octal-escape" : "error",
     // Disallow Reassignment of Function Parameters
-    "no-param-reassign" : [2, {props : true}],
-    // Disallow process.env
-    "no-process-env" : 2,
+    "no-param-reassign" : ["error", {props : true}],
     // Disallow Use of __proto__
-    "no-proto" : 2,
+    "no-proto" : "error",
     // Disallow Redeclaring Variables
-    "no-redeclare" : 2,
+    "no-redeclare" : "error",
     // Disallow Assignment in return Statement
-    "no-return-assign" : 2,
+    "no-return-assign" : ["error", "always"],
     // Disallow Script URLs
-    "no-script-url" : 2,
+    "no-script-url" : "error",
+    // Disallow Self Assignment
+    "no-self-assign" : "error",
     // Disallow Self Compare
-    "no-self-compare" : 2,
+    "no-self-compare" : "error",
     // Disallow Use of the Comma Operator
-    "no-sequences" : 2,
+    "no-sequences" : "error",
     // Restrict what can be thrown as an exception
-    "no-throw-literal" : 2,
+    "no-throw-literal" : "error",
+    // Disallow unmodified conditions of loops
+    "no-unmodified-loop-condition" : "error",
     // Disallow Unused Expressions
-    "no-unused-expressions" : 2,
-    // Disallow unncessary concatenation of strings
-    "no-useless-concat" : 2,
+    "no-unused-expressions" : "error",
+    // Disallow Unused Labels
+    "no-unused-labels" : "error",
     // Disallow unnecessary .call() and .apply().
-    "no-useless-call" : 2,
+    "no-useless-call" : "error",
+    // Disallow unnecessary concatenation of strings
+    "no-useless-concat" : "error",
+    // Disallow unnecessary escape usage
+    "no-useless-escape" : "error",
     // Disallow use of the void operator.
-    "no-void" : 2,
+    "no-void" : "error",
     // Disallow Warning Comments
-    "no-warning-comments" : [1, {
+    "no-warning-comments" : ["warn", {
       terms : ["todo", "fixme", "xxx"],
       location : "anywhere",
     }],
     // No with Statements
-    "no-with" : 2,
+    "no-with" : "error",
     // Require Radix Parameter
-    radix : [2, "as-needed"],
+    radix : ["error", "as-needed"],
     // Require Variable Declarations to be at the top of their scope
-    "vars-on-top" : 0,
+    "vars-on-top" : "off",
     // Require IIFEs to be Wrapped
-    "wrap-iife" : [2, "outside"],
+    "wrap-iife" : ["error", "outside"],
     // Require or disallow Yoda Conditions
-    yoda : [2, "never"],
+    yoda : ["error", "never"],
   },
 }

@@ -1,5 +1,5 @@
 /**
- * These rules relate to using strict mode.
+ * These rules relate to using strict mode and strict mode directives.
  * @module rules/strictMode
  * @see {@link http://eslint.org/docs/rules/#strict-mode}
  */
@@ -8,6 +8,6 @@
 module.exports = {
   rules : {
     // Strict Mode
-    strict : [2, "global"],
+    strict : ["error", "safe"],
   },
 }

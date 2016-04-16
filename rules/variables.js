@@ -8,26 +8,28 @@
 module.exports = {
   rules : {
     // Enforce/Disallow Variable Initializations
-    "init-declarations" : 0,
+    "init-declarations" : "off",
     // Disallow Shadowing of Variables Inside of catch
-    "no-catch-shadow" : 0,
+    "no-catch-shadow" : "off",
     // Disallow Variables Deletion
-    "no-delete-var" : 2,
+    "no-delete-var" : "error",
     // Disallow Labels That Are Variables Names
-    "no-label-var" : 2,
-    // Disallow Shadowing of Restricted Names
-    "no-shadow-restricted-names" : 2,
+    "no-label-var" : "error",
+    // Disallow specific global variables
+    "no-restricted-globals" : ["error", "event"],
     // Disallow Shadowing
-    "no-shadow" : 2,
-    // Disallow Initializing to undefined
-    "no-undef-init" : 2,
+    "no-shadow" : ["error", {builtinGlobals : true, hoist : "functions"}],
+    // Disallow Shadowing of Restricted Names
+    "no-shadow-restricted-names" : "error",
     // Disallow Undeclared Variables
-    "no-undef" : 2,
-    // Disallow Use of undefined Variable
-    "no-undefined" : 2,
+    "no-undef" : "error",
+    // Disallow Initializing to undefined
+    "no-undef-init" : "error",
+    // Disallow Use of `undefined` Variable
+    "no-undefined" : "error",
     // Disallow Unused Variables
-    "no-unused-vars" : [2, {vars : "all", args : "after-used"}],
+    "no-unused-vars" : ["error", {vars : "all", args : "after-used"}],
     // Disallow Early Use
-    "no-use-before-define" : 2,
+    "no-use-before-define" : ["error", {functions : true, classes : true}],
   },
 }

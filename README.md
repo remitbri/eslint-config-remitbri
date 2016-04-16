@@ -1,6 +1,6 @@
 ### eslint-config-remitbri
 
-Opinionated rule settings to be used with [ESLint](http://eslint.org/). Can be used with ESLint v1.10.3 and eslint-plugin-react v3.16.1, or above.
+Opinionated rule settings to be used with [ESLint](http://eslint.org/). Can be used with ESLint v2.8.0 and eslint-plugin-react v4.3.0, or above.
 
 # Installation
 ```shell

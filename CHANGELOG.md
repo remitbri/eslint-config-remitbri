@@ -4,6 +4,60 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+### Added
+- `array-callback-return` new rule from eslint v2.0.0
+- `id-blacklist` new rule from eslint v2.0.0
+- `keyword-spacing` new rule from eslint v2.0.0
+- `max-statements-per-line` new rule from eslint v2.5.0
+- `newline-before-return` new rule from eslint v2.3.0
+- `newline-per-chained-call` new rule from eslint v2.0.0
+- `no-confusing-arrow` new rule from eslint v2.0.0
+- `no-duplicate-imports` new rule from eslint v2.5.0
+- `no-empty-function` new rule from eslint v2.0.0
+- `no-extra-label` new rule from eslint v2.0.0
+- `no-implicit-globals` new rule from eslint v2.0.0
+- `no-new-symbol` new rule from eslint v2.0.0
+- `no-restricted-globals` new rule from eslint v2.3.0
+- `no-restricted-imports` new rule from eslint v2.0.0
+- `no-self-assign` new rule from eslint v2.0.0
+- `no-unmodified-loop-condition` new rule from eslint v2.0.0
+- `no-unused-labels` new rule from eslint v2.0.0
+- `no-useless-constructor` new rule from eslint v2.0.0
+- `no-useless-escape` new rule from eslint v2.5.0
+- `no-whitespace-before-property` new rule from eslint v2.0.0
+- `one-var-declaration-per-line` new rule from eslint v2.0.0
+- `prefer-rest-params` new rule from eslint v2.0.0
+- `sort-imports` new rule from eslint v2.0.0
+- `template-curly-spacing` new rule from eslint v2.0.0
+- `yield-star-spacing` new rule from eslint v2.0.0
+- `react/jsx-space-before-closing` new rule from eslint-plugin-reacr v4.0.0
+- `react/prefer-stateless-function` new rule from eslint-plugin-reacr v4.2.0
+- `react/require-render-return` new rule from eslint-plugin-reacr v4.3.0
+
+### Changed
+- Peer dependencies update, inc. eslint to v2.8.0 and eslint-plugin-react to v4.3.0
+- `brace-style` : now allowing single line
+- `camelcase` : `properties` now set to `always`
+- `generator-star-spacing` : now no space after `*`
+- `max-len` : `ignoreComments` out, `ignoreTrailingComments` in
+- `max-params` : maximum now 3
+- `no-empty` : now with `allowEmptyCatch` option
+- `no-multiple-empty-lines` : new `maxBOF` option
+- `no-plusplus` now activated but with `allowForLoopAfterthoughts` option
+- `require-jsdoc` now off
+- `valid-jsdoc` : only functions with a `return` statement must be documented with a `@return` tag
+- `react/display-name` : new option (breaking change)
+
+Also, with eslint v2.0.0, the following rules were removed:
+ - `no-arrow-condition`
+ - `no-empty-label`
+ - `space-after-keywords`
+ - `space-before-keywords`
+ - `space-return-throw-case`
+
+Also, with eslint-plugin-react v4.0.0, the following rule was removed:
+ - `react/jsx-quotes`
+
 
 
 ## [3.4.0] - 2016-01-25

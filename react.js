@@ -8,19 +8,25 @@ module.exports = {
   extends : [
     "remitbri/es6",
     "remitbri/node",
-    "remitbri/rules/reactPlugin",
+    "remitbri/rules/reactPlugin-generic",
+    "remitbri/rules/reactPlugin-jsxSpecific",
   ],
-  settings : {
-    react : {
-      pragma : "React",
+  parserOptions : {
+    // set to "script" (default) or "module" if your code is in ECMAScript modules
+    sourceType : "module",
+    ecmaFeatures : {
+      // enable JSX
+      jsx : true,
     },
   },
   env : {
     browser : true,
+    commonjs : true,
+    "shared-node-browser" : true,
   },
-  ecmaFeatures : {
-    jsx : true, // enable JSX
-    modules : true, // enable modules and global strict mode
-    experimentalObjectRestSpread : true,
+  settings : {
+    react : {
+      pragma : "React",
+    },
   },
 }

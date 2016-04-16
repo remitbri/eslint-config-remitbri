@@ -8,135 +8,150 @@
 module.exports = {
   rules : {
     // Disallow or enforce spaces inside of brackets.
-    "array-bracket-spacing" : [2, "never"],
+    "array-bracket-spacing" : ["error", "never"],
     // Disallow or enforce spaces inside of single line blocks
-    "block-spacing" : [2, "never"],
+    "block-spacing" : ["error", "never"],
     // Require Brace Style
-    "brace-style" : [2, "1tbs"],
+    "brace-style" : ["error", "1tbs", {allowSingleLine : true}],
     // Require Camelcase
-    camelcase : [2, {properties : "never"}],
+    camelcase : ["error", {properties : "always"}],
     // Enforces spacing around commas
-    "comma-spacing" : [2, {before : false, after : true}],
+    "comma-spacing" : ["error", {before : false, after : true}],
     // Comma style
-    "comma-style" : [2, "last"],
+    "comma-style" : ["error", "last"],
     // Disallow or enforce spaces inside of computed properties.
-    "computed-property-spacing" : [2, "never"],
+    "computed-property-spacing" : ["error", "never"],
     // Require Consistent This
-    "consistent-this" : [2, "that"],
+    "consistent-this" : ["error", "that"],
     // Require file to end with single newline
-    "eol-last" : 2,
+    "eol-last" : "error",
     // Require Function Expressions to have a Name
-    "func-names" : 1,
-    // Enforce Function Style
-    "func-style" : [0, "declaration"],
-    // Limit minimum and maximum length for identifiers
-    "id-length" : 0,
-    // Require IDs to match a pattern
-    "id-match" : 0,
-    // Validate Indentation
-    indent : [2, 2, {SwitchCase : 1, VariableDeclarator : 1}],
+    "func-names" : "warn",
+    // Enforce the consistent use of either `function` declarations or expressions
+    "func-style" : ["off", "declaration"],
+    // Disallow specified identifiers
+    "id-blacklist" : "off",
+    // Enforce minimum and maximum identifier lengths
+    "id-length" : "off",
+    // Require identifiers to match a specified regular expression
+    "id-match" : "off",
+    // Enforce consistent indentation
+    indent : ["error", 2, {SwitchCase : 1, VariableDeclarator : 1}],
     // Enforce JSX Quote Style
-    "jsx-quotes" : [2, "prefer-double"],
+    "jsx-quotes" : ["error", "prefer-double"],
     // Enforce Property Spacing
-    "key-spacing" : [2, {beforeColon : true, afterColon : true}],
-    // Disallow mixing CRLF and LF linebreaks
-    "linebreak-style" : [2, "unix"],
+    "key-spacing" : ["error", {beforeColon : true, afterColon : true}],
+    // Enforce spacing before and after keywords
+    "keyword-spacing" : ["error", {before : true, after : true}],
+    // Enforce linebreak style
+    "linebreak-style" : ["error", "unix"],
     // Enforce empty lines around comments
-    "lines-around-comment" : 0,
+    "lines-around-comment" : "off",
     // Limit Maximum Depth
-    "max-depth" : [1, 3],
+    "max-depth" : ["warn", {max : 3}],
     // Limit Maximum Length of Line
-    "max-len" : [1, 90, 2, {ignoreComments : true, ignoreUrls : true}],
+    "max-len" : ["warn", {
+      code : 90,
+      tabWidth : 4,
+      ignoreTrailingComments : true,
+      ignoreUrls : true,
+    }],
     // Set Maximum Depth of Nested Callbacks
-    "max-nested-callbacks" : [2, 3],
+    "max-nested-callbacks" : ["error", {max : 3}],
     // Limit Maximum Number of Parameter
-    "max-params" : [1, 4],
+    "max-params" : ["warn", {max : 3}],
     // Limit Maximum Number of Statement
-    "max-statements" : [0, 10],
+    "max-statements" : ["off", {max : 10}],
+    // Specify the Maximum Number of Statements Allowed per Line
+    "max-statements-per-line" : "off",
     // Require Constructors to Use Initial Caps
-    "new-cap" : 2,
+    "new-cap" : "error",
     // Require Parens for Constructors
-    "new-parens" : 2,
+    "new-parens" : "error",
     // Require or disallow an empty newline after variable declarations
-    "newline-after-var" : 0,
+    "newline-after-var" : "off",
+    // Require newline before `return` statement
+    "newline-before-return" : "off",
+    // Newline Per Chained Method Call
+    "newline-per-chained-call" : ["error", {ignoreChainWithDepth : 1}],
     // Disallow creation of dense arrays using the Array constructor
-    "no-array-constructor" : 2,
+    "no-array-constructor" : "error",
     // Disallow Bitwise Operators
-    "no-bitwise" : 2,
+    "no-bitwise" : "error",
     // Disallow continue
-    "no-continue" : 2,
+    "no-continue" : "error",
     // Disallows comments after code. Comments must come on their own lines
-    "no-inline-comments" : 0,
+    "no-inline-comments" : "off",
     // Disallow if as the Only Statement in an else Block
-    "no-lonely-if" : 2,
+    "no-lonely-if" : "error",
     // Disallow mixed spaces and tabs for indentation
-    "no-mixed-spaces-and-tabs" : [2, false],
+    "no-mixed-spaces-and-tabs" : "error",
     // Disallows multiple blank lines
-    "no-multiple-empty-lines" : [2, {max : 3, maxEOF : 1}],
+    "no-multiple-empty-lines" : ["error", {max : 3, maxBOF : 0, maxEOF : 1}],
     // Disallow use of negated expressions in conditions
-    "no-negated-condition" : 1,
+    "no-negated-condition" : "warn",
     // Disallow Nested Ternaries
-    "no-nested-ternary" : 2,
+    "no-nested-ternary" : "error",
     // Disallow the use of the Object constructor
-    "no-new-object" : 2,
+    "no-new-object" : "error",
     // Disallow ++ and --
-    "no-plusplus" : 0,
+    "no-plusplus" : ["error", {allowForLoopAfterthoughts : true}],
     // Disallow certain syntax
-    "no-restricted-syntax" : 0,
+    "no-restricted-syntax" : "off",
     // Disallow Spaces in Function Calls
-    "no-spaced-func" : 2,
+    "no-spaced-func" : "error",
     // Disallow Ternary Operators
-    "no-ternary" : 0,
+    "no-ternary" : "off",
     // Disallow trailing spaces at the end of lines
-    "no-trailing-spaces" : 2,
+    "no-trailing-spaces" : "error",
     // Disallow Dangling Underscores in Identifiers
-    "no-underscore-dangle" : 1,
+    "no-underscore-dangle" : "warn",
     // Disallow conditional expressions that can be expressed with simpler constructs
-    "no-unneeded-ternary" : 2,
+    "no-unneeded-ternary" : "error",
+    // Disallow whitespace before properties
+    "no-whitespace-before-property" : "error",
     // Disallow or enforce spaces inside of curly braces in objects.
-    "object-curly-spacing" : [2, "never"],
+    "object-curly-spacing" : ["error", "never"],
     // Require or Disallow One Variable Declaration per Scope
-    "one-var" : [2, "never"],
+    "one-var" : ["error", "never"],
+    // Require or disallow an newline around variable declarations
+    "one-var-declaration-per-line" : ["error", "always"],
     // Operator Assignment Shorthand
-    "operator-assignment" : [0, "always"],
+    "operator-assignment" : ["off", "always"],
     // Operator Linebreak
-    "operator-linebreak" : [2, "after"],
+    "operator-linebreak" : ["error", "after"],
     // Enforce padding within blocks
-    "padded-blocks" : [2, "never"],
+    "padded-blocks" : ["error", "never"],
     // Quoting Style for Property Names
-    "quote-props" : [2, "as-needed"],
+    "quote-props" : ["error", "as-needed"],
     // Enforce Quote Style
-    quotes : [2, "double"],
+    quotes : ["error", "double"],
     // Require JSDoc comment
-    "require-jsdoc" : 1,
-    // Enforce spacing before and after semicolons
-    "semi-spacing" : [2, {before : false, after : true}],
+    "require-jsdoc" : "off",
     // Enforce or Disallow Semicolons
-    semi : [2, "never"],
+    semi : ["error", "never"],
+    // Enforce spacing before and after semicolons
+    "semi-spacing" : ["error", {before : false, after : true}],
+    // Import Sorting (
+    "sort-imports" : "off",
     // Variable Sorting
-    "sort-vars" : 0,
-    // Require or disallow spaces following keywords
-    "space-after-keywords" : [2, "always"],
+    "sort-vars" : "off",
     // Require Or Disallow Space Before Blocks
-    "space-before-blocks" : [2, "always"],
+    "space-before-blocks" : ["error", "always"],
     // Require or disallow a space before function parenthesis
-    "space-before-function-paren" : [2, "never"],
-    // Require or disallow spaces before keywords
-    "space-before-keywords" : [2, "always"],
+    "space-before-function-paren" : ["error", "never"],
     // Disallow or enforce spaces inside of parentheses
-    "space-in-parens" : [2, "never"],
+    "space-in-parens" : ["error", "never"],
     // Require Spaces Around Infix Operators
-    "space-infix-ops" : 2,
-    // Require spaces following return, throw, and case
-    "space-return-throw-case" : 2,
+    "space-infix-ops" : "error",
     // Require or disallow spaces before/after unary operators
-    "space-unary-ops" : [2, {words : true, nonwords : false}],
+    "space-unary-ops" : ["error", {words : true, nonwords : false}],
     // Requires or disallows a whitespace (space or tab) beginning a comment
-    "spaced-comment" : [2, "always", {
+    "spaced-comment" : ["error", "always", {
       exceptions : ["-", "+"],
       markers : ["/"],
     }],
     // Require Regex Literals to be Wrapped
-    "wrap-regex" : 2,
+    "wrap-regex" : "error",
   },
 }
