@@ -4,6 +4,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+### Changed
+- modification of `maxEOF` value in `no-multiple-empty-lines`
+- changelog fix
+
+
+## [4.0.0] - 2016-04-16
 ### Added
 - `array-callback-return` new rule from eslint v2.0.0
 - `id-blacklist` new rule from eslint v2.0.0
