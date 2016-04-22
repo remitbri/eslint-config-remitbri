@@ -5,7 +5,10 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 
 ## [Unreleased]
 ### Changed
+- fix mistakes in documentation
+
 ### Added
+- `react/jsx-first-prop-new-line` new rule from eslint-plugin-react v5.0.0
 
 
 
