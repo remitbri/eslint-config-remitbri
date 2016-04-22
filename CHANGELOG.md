@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 ## [Unreleased]
+### Changed
+### Added
 
 
 
@@ -40,9 +42,9 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `sort-imports` new rule from eslint v2.0.0
 - `template-curly-spacing` new rule from eslint v2.0.0
 - `yield-star-spacing` new rule from eslint v2.0.0
-- `react/jsx-space-before-closing` new rule from eslint-plugin-reacr v4.0.0
-- `react/prefer-stateless-function` new rule from eslint-plugin-reacr v4.2.0
-- `react/require-render-return` new rule from eslint-plugin-reacr v4.3.0
+- `react/jsx-space-before-closing` new rule from eslint-plugin-react v4.0.0
+- `react/prefer-stateless-function` new rule from eslint-plugin-react v4.2.0
+- `react/require-render-return` new rule from eslint-plugin-react v4.3.0
 
 ### Changed
 - Peer dependencies update, inc. eslint to v2.8.0 and eslint-plugin-react to v4.3.0
