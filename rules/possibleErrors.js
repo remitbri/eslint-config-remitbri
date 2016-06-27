@@ -7,61 +7,66 @@
 
 module.exports = {
   rules : {
-    // Disallow or Enforce Dangling Commas
-    "comma-dangle" : ["error", "always-multiline"],
-    // Disallow Assignment in Conditional Statements
-    "no-cond-assign" : "error",
-    // Disallow Use of console
+    // Require or disallow trailing commas
+    "comma-dangle" : [ "error", "always-multiline" ],
+    // Disallow assignment operators in conditional statements
+    "no-cond-assign" : [ "error", "except-parens" ],
+    // Disallow the use of `console`
     "no-console" : "error",
-    // Disallow use of constant expressions in conditions
+    // Disallow constant expressions in conditions
     "no-constant-condition" : "error",
-    // Disallow Controls Characters in Regular Expressions
+    // Disallow control characters in regular expressions
     "no-control-regex" : "error",
-    // Disallow debugger
+    // Disallow the use of `debugger`
     "no-debugger" : "error",
-    // No duplicate arguments
+    // Disallow duplicate arguments in `function` definitions
     "no-dupe-args" : "error",
-    // Disallow Duplicate Keys
+    // Disallow duplicate keys in object literals
     "no-dupe-keys" : "error",
     // Rule to disallow a duplicate case label
     "no-duplicate-case" : "error",
-    // Disallow Empty Character Classes
+    // Disallow empty block statements
+    "no-empty" : [ "error", { allowEmptyCatch : true }],
+    // Disallow empty character classes in regular expressions
     "no-empty-character-class" : "error",
-    // Disallow Empty Block Statements
-    "no-empty" : ["error", {allowEmptyCatch : true}],
-    // Disallow Assignment of the Exception Parameter
+    // Disallow reassigning exceptions in `catch` clauses
     "no-ex-assign" : "error",
-    // Disallow Extra Boolean Casts
+    // Disallow unnecessary boolean casts
     "no-extra-boolean-cast" : "error",
-    // Disallow Extra Parens
-    "no-extra-parens" : ["error", "functions"],
-    // Disallow Extra Semicolons
+    // Disallow unnecessary parentheses
+    "no-extra-parens" : [ "error", "functions" ],
+    // Disallow unnecessary semicolons
     "no-extra-semi" : "error",
-    // Disallow Function Assignment
+    // Disallow reassigning `function` declarations
     "no-func-assign" : "error",
-    // Declarations in Program or Function Body
-    "no-inner-declarations" : ["error", "both"],
-    // Disallow Invalid Regular Expressions
+    // Declarations `function` or `var` declarations in nested blocks
+    "no-inner-declarations" : [ "error", "both" ],
+    // Disallow invalid regular expression strings in `RegExp` constructors
     "no-invalid-regexp" : "error",
-    // No irregular whitespace
+    // Disallow irregular whitespace
     "no-irregular-whitespace" : "error",
-    // Disallow negated left operand of `in` operator
+    // Disallow negating the left operand in `in` expressions
     "no-negated-in-lhs" : "error",
-    // Disallow Global Object Function Calls
+    // Disallow calling global object properties as functions
     "no-obj-calls" : "error",
-    // Disallow Spaces in Regular Expressions
+    // Disallow use of Object.prototypes builtins directly
+    "no-prototype-builtins" : "error",
+    // Disallow multiple spaces in regular expression literals
     "no-regex-spaces" : "error",
-    // Disallow Sparse Arrays
+    // Disallow sparse arrays
     "no-sparse-arrays" : "error",
-    // Avoid unexpected multiline expressions
+    // Disallow uconfusing multiline expressions
     "no-unexpected-multiline" : "error",
-    // Disallow Unreachable Code
+    // Disallow unreachable code after `return`, `throw`, `continue`,
+    // and `break` statements
     "no-unreachable" : "error",
-    // Require isNaN()
+    // Disallow control flow statements in `finally` blocks
+    "no-unsafe-finally" : "error",
+    // Require calls to `isNaN()` when checking for `NaN`
     "use-isnan" : "error",
-    // Validates JSDoc comments are syntactically correct
-    "valid-jsdoc" : ["warn", {requireReturn : false}],
-    // Ensures that the results of typeof are compared against a valid string
+    // Enforce valid JSDoc comments
+    "valid-jsdoc" : [ "warn", { requireReturn : false }],
+    // Enforce comparing `typeof` expressions against valid strings
     "valid-typeof" : "error",
   },
 }

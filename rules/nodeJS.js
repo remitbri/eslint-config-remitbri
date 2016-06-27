@@ -9,13 +9,16 @@
 module.exports = {
   rules : {
     // Enforce Return After Callback
-    "callback-return" : ["error", ["callback", "cb", "next"]],
+    "callback-return" : [ "error", [ "callback", "cb", "next" ]],
     //  Enforce require() on the top-level module scope
     "global-require" : "error",
     // Enforce Callback Error Handling
-    "handle-callback-err" : ["error", "^(err|error|anySpecificError)$"],
+    "handle-callback-err" : [ "error", "^(err|error|anySpecificError)$" ],
     // Disallow Mixed Requires
-    "no-mixed-requires" : ["error", {grouping : false, allowCall : false}],
+    "no-mixed-requires" : [ "error", {
+      grouping : false,
+      allowCall : false,
+    }],
     // Disallow new require
     "no-new-require" : "error",
     // Disallow string concatenation when using `__dirname` and `__filename`

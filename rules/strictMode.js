@@ -7,7 +7,7 @@
 
 module.exports = {
   rules : {
-    // Strict Mode
-    strict : ["error", "safe"],
+    // Require or disallow strict mode directives
+    strict : [ "error", "safe" ],
   },
 }

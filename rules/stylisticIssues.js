@@ -8,27 +8,34 @@
 module.exports = {
   rules : {
     // Disallow or enforce spaces inside of brackets.
-    "array-bracket-spacing" : ["error", "never"],
+    "array-bracket-spacing" : [ "error", "always", {
+      singleValue : false,
+      objectsInArrays : false,
+      arraysInArrays : false,
+    }],
     // Disallow or enforce spaces inside of single line blocks
-    "block-spacing" : ["error", "never"],
+    "block-spacing" : [ "error", "never" ],
     // Require Brace Style
-    "brace-style" : ["error", "1tbs", {allowSingleLine : true}],
+    "brace-style" : [ "error", "1tbs", { allowSingleLine : true }],
     // Require Camelcase
-    camelcase : ["error", {properties : "always"}],
+    camelcase : [ "error", { properties : "always" }],
     // Enforces spacing around commas
-    "comma-spacing" : ["error", {before : false, after : true}],
+    "comma-spacing" : [ "error", {
+      before : false,
+      after : true,
+    }],
     // Comma style
-    "comma-style" : ["error", "last"],
+    "comma-style" : [ "error", "last" ],
     // Disallow or enforce spaces inside of computed properties.
-    "computed-property-spacing" : ["error", "never"],
+    "computed-property-spacing" : [ "error", "never" ],
     // Require Consistent This
-    "consistent-this" : ["error", "that"],
+    "consistent-this" : [ "error", "that" ],
     // Require file to end with single newline
     "eol-last" : "error",
-    // Require Function Expressions to have a Name
+    // Require or disallow named `function` expressions
     "func-names" : "warn",
     // Enforce the consistent use of either `function` declarations or expressions
-    "func-style" : ["off", "declaration"],
+    "func-style" : [ "off", "declaration" ],
     // Disallow specified identifiers
     "id-blacklist" : "off",
     // Enforce minimum and maximum identifier lengths
@@ -36,71 +43,94 @@ module.exports = {
     // Require identifiers to match a specified regular expression
     "id-match" : "off",
     // Enforce consistent indentation
-    indent : ["error", 2, {SwitchCase : 1, VariableDeclarator : 1}],
-    // Enforce JSX Quote Style
-    "jsx-quotes" : ["error", "prefer-double"],
-    // Enforce Property Spacing
-    "key-spacing" : ["error", {beforeColon : true, afterColon : true}],
-    // Enforce spacing before and after keywords
-    "keyword-spacing" : ["error", {before : true, after : true}],
-    // Enforce linebreak style
-    "linebreak-style" : ["error", "unix"],
-    // Enforce empty lines around comments
+    indent : [ "error", 2, {
+      SwitchCase : 1,
+      VariableDeclarator : 1,
+      outerIIFEBody : 1,
+    }],
+    // Enforce the consistent use of either double or single quotes in JSX attributes
+    "jsx-quotes" : [ "error", "prefer-double" ],
+    // Enforce consistent spacing between keys and values in object literal properties
+    "key-spacing" : [ "error", {
+      beforeColon : true,
+      afterColon : true,
+      mode : "strict",
+    }],
+    // Enforce consistent spacing before and after keywords
+    "keyword-spacing" : [ "error", {
+      before : true,
+      after : true,
+    }],
+    // Enforce consistent linebreak style
+    "linebreak-style" : [ "error", "unix" ],
+    // Require empty lines around comments
     "lines-around-comment" : "off",
-    // Limit Maximum Depth
-    "max-depth" : ["warn", {max : 3}],
-    // Limit Maximum Length of Line
-    "max-len" : ["warn", {
+    // Enforce a maximum depth that blocks can be nested
+    "max-depth" : [ "warn", { max : 3 }],
+    // Enforce a maximum line length
+    "max-len" : [ "warn", {
       code : 90,
       tabWidth : 4,
       ignoreTrailingComments : true,
       ignoreUrls : true,
     }],
-    // Set Maximum Depth of Nested Callbacks
-    "max-nested-callbacks" : ["error", {max : 3}],
-    // Limit Maximum Number of Parameter
-    "max-params" : ["warn", {max : 3}],
-    // Limit Maximum Number of Statement
-    "max-statements" : ["off", {max : 10}],
-    // Specify the Maximum Number of Statements Allowed per Line
+    // Enforce a maximum file length
+    "max-lines" : "off",
+    // Enforce a maximum depth that callbacks can be nested
+    "max-nested-callbacks" : [ "error", { max : 3 }],
+    // Enforce a maximum number of parameters in `function` definitions
+    "max-params" : [ "warn", { max : 3 }],
+    // Enforce a maximum number of statements allowed in `function` blocks
+    "max-statements" : [ "off", { max : 10 }],
+    // Enforce a maximum number of statements allowed per line
     "max-statements-per-line" : "off",
-    // Require Constructors to Use Initial Caps
-    "new-cap" : "error",
-    // Require Parens for Constructors
+    // Require constructor `function` names to begin with a capital letter
+    "new-cap" : [ "error", {
+      newIsCap : true,
+      capIsNew : true,
+      properties : true,
+    }],
+    // Require parentheses when invoking a constructor with no arguments
     "new-parens" : "error",
-    // Require or disallow an empty newline after variable declarations
+    // Require or disallow an empty line after `var` declarations
     "newline-after-var" : "off",
-    // Require newline before `return` statement
+    // Require an empty line before `return` statements
     "newline-before-return" : "off",
-    // Newline Per Chained Method Call
-    "newline-per-chained-call" : ["error", {ignoreChainWithDepth : 1}],
-    // Disallow creation of dense arrays using the Array constructor
+    // Require a newline after each call in a method chain
+    "newline-per-chained-call" : [ "error", { ignoreChainWithDepth : 1 }],
+    // Disallow `Array` constructors
     "no-array-constructor" : "error",
-    // Disallow Bitwise Operators
+    // Disallow bitwise operators
     "no-bitwise" : "error",
-    // Disallow continue
+    // Disallow `continue` max-statements
     "no-continue" : "error",
-    // Disallows comments after code. Comments must come on their own lines
+    // Disallows inline comments after code
     "no-inline-comments" : "off",
-    // Disallow if as the Only Statement in an else Block
+    // Disallow `if` statements as the only statement in `else` blocks
     "no-lonely-if" : "error",
+    // Disallow mixes of different operators
+    "no-mixed-operators" : "error",
     // Disallow mixed spaces and tabs for indentation
     "no-mixed-spaces-and-tabs" : "error",
-    // Disallows multiple blank lines
-    "no-multiple-empty-lines" : ["error", {max : 3, maxBOF : 0, maxEOF : 0}],
-    // Disallow use of negated expressions in conditions
+    // Disallows multiple empty lines
+    "no-multiple-empty-lines" : [ "error", {
+      max : 3,
+      maxBOF : 0,
+      maxEOF : 0,
+    }],
+    // Disallow negated conditions
     "no-negated-condition" : "warn",
-    // Disallow Nested Ternaries
+    // Disallow nested ternary expressions
     "no-nested-ternary" : "error",
-    // Disallow the use of the Object constructor
+    // Disallow `Object` constructors
     "no-new-object" : "error",
-    // Disallow ++ and --
-    "no-plusplus" : ["error", {allowForLoopAfterthoughts : true}],
-    // Disallow certain syntax
+    // Disallow the unary operators `++` and `--`
+    "no-plusplus" : [ "error", { allowForLoopAfterthoughts : true }],
+    // Disallow specified syntax
     "no-restricted-syntax" : "off",
-    // Disallow Spaces in Function Calls
+    // Disallow spacing between `function` identifiers and their applications
     "no-spaced-func" : "error",
-    // Disallow Ternary Operators
+    // Disallow ternary operators
     "no-ternary" : "off",
     // Disallow trailing spaces at the end of lines
     "no-trailing-spaces" : "error",
@@ -110,47 +140,63 @@ module.exports = {
     "no-unneeded-ternary" : "error",
     // Disallow whitespace before properties
     "no-whitespace-before-property" : "error",
+    // Require or disallow line breaks inside braces
+    "object-curly-newline" : [ "off", {
+      multiline : true,
+      minProperties : 2,
+    }],
     // Disallow or enforce spaces inside of curly braces in objects.
-    "object-curly-spacing" : ["error", "never"],
+    "object-curly-spacing" : [ "error", "always", {
+      objectsInObjects : false,
+      arraysInObjects : false,
+    }],
+    // Enforce placing object properties on separate lines
+    "object-property-newline" : "error",
     // Require or Disallow One Variable Declaration per Scope
-    "one-var" : ["error", "never"],
+    "one-var" : [ "error", "never" ],
     // Require or disallow an newline around variable declarations
-    "one-var-declaration-per-line" : ["error", "always"],
+    "one-var-declaration-per-line" : [ "error", "always" ],
     // Operator Assignment Shorthand
-    "operator-assignment" : ["off", "always"],
+    "operator-assignment" : [ "off", "always" ],
     // Operator Linebreak
-    "operator-linebreak" : ["error", "after"],
+    "operator-linebreak" : [ "error", "after" ],
     // Enforce padding within blocks
-    "padded-blocks" : ["error", "never"],
+    "padded-blocks" : [ "error", "never" ],
     // Quoting Style for Property Names
-    "quote-props" : ["error", "as-needed"],
+    "quote-props" : [ "error", "as-needed" ],
     // Enforce Quote Style
-    quotes : ["error", "double"],
+    quotes : [ "error", "double" ],
     // Require JSDoc comment
     "require-jsdoc" : "off",
     // Enforce or Disallow Semicolons
-    semi : ["error", "never"],
+    semi : [ "error", "never" ],
     // Enforce spacing before and after semicolons
-    "semi-spacing" : ["error", {before : false, after : true}],
-    // Import Sorting (
-    "sort-imports" : "off",
+    "semi-spacing" : [ "error", {
+      before : false,
+      after : true,
+    }],
     // Variable Sorting
     "sort-vars" : "off",
     // Require Or Disallow Space Before Blocks
-    "space-before-blocks" : ["error", "always"],
+    "space-before-blocks" : [ "error", "always" ],
     // Require or disallow a space before function parenthesis
-    "space-before-function-paren" : ["error", "never"],
+    "space-before-function-paren" : [ "error", "never" ],
     // Disallow or enforce spaces inside of parentheses
-    "space-in-parens" : ["error", "never"],
+    "space-in-parens" : [ "error", "never" ],
     // Require Spaces Around Infix Operators
     "space-infix-ops" : "error",
     // Require or disallow spaces before/after unary operators
-    "space-unary-ops" : ["error", {words : true, nonwords : false}],
+    "space-unary-ops" : [ "error", {
+      words : true,
+      nonwords : false,
+    }],
     // Requires or disallows a whitespace (space or tab) beginning a comment
-    "spaced-comment" : ["error", "always", {
-      exceptions : ["-", "+"],
+    "spaced-comment" : [ "error", "always", {
+      exceptions : [ "-", "+" ],
       markers : ["/"],
     }],
+    // Require or disallow the Unicode Byte Order Mark (BOM)
+    "unicode-bom" : [ "error", "never" ],
     // Require Regex Literals to be Wrapped
     "wrap-regex" : "error",
   },

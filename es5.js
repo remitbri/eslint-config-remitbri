@@ -10,7 +10,7 @@ module.exports = {
     ecmaVersion : 5,
     // set to "script" (default) or "module" if your code is in ECMAScript modules
     sourceType : "script",
-    ecmaFeatures : {
+    // ecmaFeatures : {
     //   // allow return statements in the global scope
     //   globalReturn : false,
     //   // enable global strict mode (if `ecmaVersion` is 5 or greater)
@@ -19,7 +19,7 @@ module.exports = {
     //   jsx : false,
     //   // enable support for the experimental object rest/spread properties
     //   experimentalObjectRestSpread : false,
-    },
+    // },
   },
   // // default parser : espree
   // parser : "espree",

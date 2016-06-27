@@ -11,14 +11,17 @@ module.exports = {
     "init-declarations" : "off",
     // Disallow Shadowing of Variables Inside of catch
     "no-catch-shadow" : "off",
-    // Disallow Variables Deletion
+    // Disallow deleting variables
     "no-delete-var" : "error",
     // Disallow Labels That Are Variables Names
     "no-label-var" : "error",
     // Disallow specific global variables
-    "no-restricted-globals" : ["error", "event"],
+    "no-restricted-globals" : [ "error", "event" ],
     // Disallow Shadowing
-    "no-shadow" : ["error", {builtinGlobals : true, hoist : "functions"}],
+    "no-shadow" : [ "error", {
+      builtinGlobals : true,
+      hoist : "functions",
+    }],
     // Disallow Shadowing of Restricted Names
     "no-shadow-restricted-names" : "error",
     // Disallow Undeclared Variables
@@ -28,8 +31,14 @@ module.exports = {
     // Disallow Use of `undefined` Variable
     "no-undefined" : "error",
     // Disallow Unused Variables
-    "no-unused-vars" : ["error", {vars : "all", args : "after-used"}],
+    "no-unused-vars" : [ "error", {
+      vars : "all",
+      args : "after-used",
+    }],
     // Disallow Early Use
-    "no-use-before-define" : ["error", {functions : true, classes : true}],
+    "no-use-before-define" : [ "error", {
+      functions : true,
+      classes : true,
+    }],
   },
 }

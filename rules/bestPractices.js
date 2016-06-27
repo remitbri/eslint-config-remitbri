@@ -9,25 +9,25 @@
 module.exports = {
   rules : {
     // Enforces getter/setter pairs in objects
-    "accessor-pairs" : ["error", {getWithoutSet : true}],
+    "accessor-pairs" : [ "error", { getWithoutSet : true }],
     // Enforces return statements in callbacks of array's methods (
     "array-callback-return" : "error",
     // Treat var as Block Scoped
     "block-scoped-var" : "error",
     // Limit Cyclomatic Complexity
-    complexity : ["error", {max : 5}],
-    // Require Consistent Returns
+    complexity : [ "error", { max : 5 }],
+    // Require `return` statements to either always or never specify values
     "consistent-return" : "error",
     // Require Following Curly Brace Conventions
-    curly : ["error", "all"],
+    curly : [ "error", "all" ],
     // Require Default Case in Switch Statements
     "default-case" : "error",
     // Enforce newline before and after dot
-    "dot-location" : ["error", "property"],
+    "dot-location" : [ "error", "property" ],
     // Require Dot Notation
-    "dot-notation" : ["error", {allowKeywords : true}],
+    "dot-notation" : [ "error", { allowKeywords : true }],
     // Require === and !==
-    eqeqeq : ["error", "smart"],
+    eqeqeq : [ "error", "smart" ],
     // Require Guarding for-in
     "guard-for-in" : "warn",
     // Disallow Use of Alert
@@ -69,13 +69,16 @@ module.exports = {
     // Disallow Iterator
     "no-iterator" : "error",
     // Disallow Labeled Statements
-    "no-labels" : ["error", {allowLoop : true, allowSwitch : true}],
+    "no-labels" : [ "error", {
+      allowLoop : true,
+      allowSwitch : true,
+    }],
     // Disallow Unnecessary Nested Blocks
     "no-lone-blocks" : "error",
     // Disallow Functions in Loops
     "no-loop-func" : "error",
     // Disallow Magic Numbers
-    "no-magic-numbers" : ["warn", {detectObjects : false}],
+    "no-magic-numbers" : [ "warn", { detectObjects : false }],
     // Disallow multiple spaces
     "no-multi-spaces" : "error",
     // Disallow Multiline Strings
@@ -88,18 +91,18 @@ module.exports = {
     "no-new-func" : "error",
     // Disallow Primitive Wrapper Instances
     "no-new-wrappers" : "error",
-    // Disallow Octal Literals
+    // Disallow octal literals
     "no-octal" : "error",
-    // Disallow Octal Escapes
+    // Disallow octal escape sequences in string literals
     "no-octal-escape" : "error",
     // Disallow Reassignment of Function Parameters
-    "no-param-reassign" : ["error", {props : true}],
+    "no-param-reassign" : [ "error", { props : true }],
     // Disallow Use of __proto__
     "no-proto" : "error",
     // Disallow Redeclaring Variables
     "no-redeclare" : "error",
     // Disallow Assignment in return Statement
-    "no-return-assign" : ["error", "always"],
+    "no-return-assign" : [ "error", "always" ],
     // Disallow Script URLs
     "no-script-url" : "error",
     // Disallow Self Assignment
@@ -125,19 +128,19 @@ module.exports = {
     // Disallow use of the void operator.
     "no-void" : "error",
     // Disallow Warning Comments
-    "no-warning-comments" : ["warn", {
-      terms : ["todo", "fixme", "xxx"],
+    "no-warning-comments" : [ "warn", {
+      terms : [ "todo", "fixme", "xxx" ],
       location : "anywhere",
     }],
-    // No with Statements
+    // No `with` statements
     "no-with" : "error",
     // Require Radix Parameter
-    radix : ["error", "as-needed"],
+    radix : [ "error", "as-needed" ],
     // Require Variable Declarations to be at the top of their scope
     "vars-on-top" : "off",
     // Require IIFEs to be Wrapped
-    "wrap-iife" : ["error", "outside"],
+    "wrap-iife" : [ "error", "outside" ],
     // Require or disallow Yoda Conditions
-    yoda : ["error", "never"],
+    yoda : [ "error", "never" ],
   },
 }

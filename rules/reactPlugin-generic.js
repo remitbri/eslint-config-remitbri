@@ -9,9 +9,11 @@ module.exports = {
   plugins : ["react"],
   rules : {
     // Prevent missing displayName in a React component definition
-    "react/display-name" : ["error", {ignoreTranspilerName : false}],
+    "react/display-name" : [ "error", { ignoreTranspilerName : false }],
     // Forbid certain propTypes
     "react/forbid-prop-types" : "error",
+    // Prevent comments from being inserted as text nodes
+    "react/no-comment-textnodes" : "error",
     // Prevent usage of dangerous JSX properties
     "react/no-danger" : "warn",
     /** DEPRECATED **/ // Prevent usage of deprecated methods
@@ -26,6 +28,8 @@ module.exports = {
     "react/no-is-mounted" : "error",
     // Prevent multiple component definition per file
     "react/no-multi-comp" : "error",
+    // Prevent usage of the return value of React.render
+    "react/no-render-return-value" : "error",
     // Prevent usage of setState
     "react/no-set-state" : "off",
     // Prevent using string references
@@ -33,7 +37,7 @@ module.exports = {
     // Prevent usage of unknown DOM property (no-unknown-property)
     "react/no-unknown-property" : "error",
     // Enforce ES5 or ES6 class for React Components
-    "react/prefer-es6-class" : ["error", "always"],
+    "react/prefer-es6-class" : [ "error", "always" ],
     // Enforce stateless React Components to be written as a pure function
     "react/prefer-stateless-function" /** DEPRECATED **/ : "error",
     // Prevent missing props validation in a React component definition
@@ -41,11 +45,16 @@ module.exports = {
     // Prevent missing React when using JSX
     "react/react-in-jsx-scope" : "error",
     // Restrict file extensions that may be required
-    "react/require-extension" : ["error", {extensions : [".js", ".jsx"]}],
+    "react/require-extension" : [ "error", { extensions : [ ".js", ".jsx" ]}],
+    // Enforce React components to have a shouldComponentUpdate method
+    "react/require-optimization" : "off",
     // Enforce ES5 or ES6 class for returning value in render function
     "react/require-render-return" : "error",
     // Prevent extra closing tags for components without children
-    "react/self-closing-comp" : "error",
+    "react/self-closing-comp" : [ "error", {
+      component : true,
+      html : true,
+    }],
     // Enforce component methods order
     "react/sort-comp" : "error",
     // Enforce propTypes declarations alphabetical sorting

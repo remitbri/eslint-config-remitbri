@@ -16,12 +16,12 @@ module.exports = {
   rules : {
     // *** POSSIBLE "error"S
     // Disallow or Enforce Dangling Commas
-    "comma-dangle" : ["error", "never"],
+    "comma-dangle" : [ "error", "never" ],
 
     // *** BEST PRACTICES
     // Require Radix Parameter
-    "dot-notation" : ["error", {allowKeywords : false}],
-    radix : ["error", "always"],
+    "dot-notation" : [ "error", { allowKeywords : false }],
+    radix : [ "error", "always" ],
 
     // *** VARIABLES
     // Disallow Shadowing of Variables Inside of catch
@@ -29,6 +29,6 @@ module.exports = {
 
     // *** STYLISTIC ISSUES
     // Quoting Style for Property Names
-    "quote-props" : ["error", "always"],
+    "quote-props" : [ "error", "always" ],
   },
 }
