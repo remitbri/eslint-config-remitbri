@@ -132,15 +132,15 @@ module.exports = {
     "no-spaced-func" : "error",
     // Disallow ternary operators
     "no-ternary" : "off",
-    // Disallow trailing spaces at the end of lines
+    // Disallow trailing whitespace at the end of lines
     "no-trailing-spaces" : "error",
-    // Disallow Dangling Underscores in Identifiers
+    // Disallow dangling underscores in identifiers
     "no-underscore-dangle" : "warn",
-    // Disallow conditional expressions that can be expressed with simpler constructs
+    // Disallow ternary operators when simpler alternatives exist
     "no-unneeded-ternary" : "error",
     // Disallow whitespace before properties
     "no-whitespace-before-property" : "error",
-    // Require or disallow line breaks inside braces
+    // Enforce consistent line breaks inside braces
     "object-curly-newline" : [ "off", {
       multiline : true,
       minProperties : 2,
