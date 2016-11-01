@@ -6,6 +6,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 ## [Unreleased]
 ### Added
 - `max-lines` new rule from eslint v2.12.0
+- `multiline-ternary` new rule from eslint v3.1.0
 - `no-mixed-operators` new rule from eslint v2.12.0
 - `no-prototype-builtins` new rule from eslint v2.11.0
 - `no-unsafe-finally` new rule from eslint v2.9.0

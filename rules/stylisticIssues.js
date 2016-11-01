@@ -84,6 +84,8 @@ module.exports = {
     "max-statements" : [ "off", { max : 10 }],
     // Enforce a maximum number of statements allowed per line
     "max-statements-per-line" : "off",
+    // Enforce newlines between operands of ternary expressions
+    "multiline-ternary" : "error",
     // Require constructor `function` names to begin with a capital letter
     "new-cap" : [ "error", {
       newIsCap : true,
