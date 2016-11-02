@@ -9,6 +9,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `multiline-ternary` new rule from eslint v3.1.0
 - `no-mixed-operators` new rule from eslint v2.12.0
 - `no-prototype-builtins` new rule from eslint v2.11.0
+- `no-tabs` new rule from eslint v3.2.0
 - `no-unsafe-finally` new rule from eslint v2.9.0
 - `no-useless-computed-key` new rule from eslint v2.9.0
 - `no-useless-rename` new rule from eslint v2.11.0
@@ -27,6 +28,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - Explicited default values for some rules (without value modification)
 - `array-bracket-spacing` option changed to always
 - `object-curly-spacing` option changed to always
+- `valid-jsdoc` rule turned off
 - `react/jsx-space-before-closing` option changed to always
 
 

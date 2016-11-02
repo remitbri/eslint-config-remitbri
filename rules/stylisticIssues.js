@@ -33,7 +33,7 @@ module.exports = {
     // Require file to end with single newline
     "eol-last" : "error",
     // Require or disallow named `function` expressions
-    "func-names" : "warn",
+    "func-names" : ["warn", "always"],
     // Enforce the consistent use of either `function` declarations or expressions
     "func-style" : [ "off", "declaration" ],
     // Disallow specified identifiers
@@ -47,6 +47,7 @@ module.exports = {
       SwitchCase : 1,
       VariableDeclarator : 1,
       outerIIFEBody : 1,
+      MemberExpression : 1,
     }],
     // Enforce the consistent use of either double or single quotes in JSX attributes
     "jsx-quotes" : [ "error", "prefer-double" ],
@@ -132,6 +133,8 @@ module.exports = {
     "no-restricted-syntax" : "off",
     // Disallow spacing between `function` identifiers and their applications
     "no-spaced-func" : "error",
+    // Disallow tabs in file
+    "no-tabs" : "error",
     // Disallow ternary operators
     "no-ternary" : "off",
     // Disallow trailing whitespace at the end of lines

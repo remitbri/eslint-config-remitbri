@@ -65,7 +65,7 @@ module.exports = {
     // Require calls to `isNaN()` when checking for `NaN`
     "use-isnan" : "error",
     // Enforce valid JSDoc comments
-    "valid-jsdoc" : [ "warn", { requireReturn : false }],
+    "valid-jsdoc" : [ "off", { requireReturn : false }],
     // Enforce comparing `typeof` expressions against valid strings
     "valid-typeof" : "error",
   },
