@@ -5,17 +5,22 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 
 ## [Unreleased]
 ### Added
+- `func-call-spacing` new rule from eslint v3.3.0
 - `max-lines` new rule from eslint v2.12.0
 - `multiline-ternary` new rule from eslint v3.1.0
+- `no-global-assign` new rule from eslint v3.3.0
 - `no-mixed-operators` new rule from eslint v2.12.0
 - `no-prototype-builtins` new rule from eslint v2.11.0
 - `no-tabs` new rule from eslint v3.2.0
+- `no-template-curly-in-string` new rule from eslint v3.3.0
 - `no-unsafe-finally` new rule from eslint v2.9.0
+- `no-unsafe-negation` new rule from eslint v3.3.0
 - `no-useless-computed-key` new rule from eslint v2.9.0
 - `no-useless-rename` new rule from eslint v2.11.0
 - `object-curly-newline` new rule from eslint v2.12.0
 - `object-property-newline` new rule from eslint v2.10.0
 - `rest-spread-spacing` new rule from eslint v2.12.0
+- `sort-keys` new rule from eslint v3.3.0
 - `unicode-bom` new rule from eslint v2.11.0
 - `react/jsx-filename-extension` new rule from eslint-plugin-react v5.2.0
 - `react/jsx-no-target-blank` new rule from eslint-plugin-react v5.1.0
@@ -31,6 +36,10 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `valid-jsdoc` rule turned off
 - `react/jsx-space-before-closing` option changed to always
 
+### Deprecated
+- `no-native-reassign` replaced by  `no-global-assign’ in v3.3.0
+- `no-negated-in-lhs` replaced by `no-unsafe-negation’ in v3.3.0
+- `no-spaced-func` replaced by  `func-call-spacing’ in v3.3.0
 
 
 ## [4.1.0] - 2016-04-22

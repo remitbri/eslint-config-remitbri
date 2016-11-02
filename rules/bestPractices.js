@@ -58,6 +58,8 @@ module.exports = {
     "no-fallthrough" : "error",
     // Disallow Floating Decimals
     "no-floating-decimal" : "error",
+    // Disallow assignment to native objects or read-only global variables
+    "no-global-assign" : "error",
     // Disallow the type conversion with shorter notations.
     "no-implicit-coercion" : "error",
     // Disallow var and Named Functions in Global Scope
@@ -84,7 +86,8 @@ module.exports = {
     // Disallow Multiline Strings
     "no-multi-str" : "error",
     // Disallow Reassignment of Native Objects
-    "no-native-reassign" : "error",
+    // **deprecated** in ESLint v3.3.0
+    "no-native-reassign" : "off",
     // Disallow new For Side Effects
     "no-new" : "error",
     // Disallow Function Constructor
@@ -106,7 +109,7 @@ module.exports = {
     // Disallow Script URLs
     "no-script-url" : "error",
     // Disallow Self Assignment
-    "no-self-assign" : "error",
+    "no-self-assign" : [ "error", { props : false }],
     // Disallow Self Compare
     "no-self-compare" : "error",
     // Disallow Use of the Comma Operator

@@ -46,7 +46,8 @@ module.exports = {
     // Disallow irregular whitespace
     "no-irregular-whitespace" : "error",
     // Disallow negating the left operand in `in` expressions
-    "no-negated-in-lhs" : "error",
+    // **deprecated** in ESLint v3.3.0
+    "no-negated-in-lhs" : "off",
     // Disallow calling global object properties as functions
     "no-obj-calls" : "error",
     // Disallow use of Object.prototypes builtins directly
@@ -55,6 +56,8 @@ module.exports = {
     "no-regex-spaces" : "error",
     // Disallow sparse arrays
     "no-sparse-arrays" : "error",
+    // Disallow template literal placeholder syntax in regular strings
+    "no-template-curly-in-string" : "error",
     // Disallow uconfusing multiline expressions
     "no-unexpected-multiline" : "error",
     // Disallow unreachable code after `return`, `throw`, `continue`,
@@ -62,6 +65,8 @@ module.exports = {
     "no-unreachable" : "error",
     // Disallow control flow statements in `finally` blocks
     "no-unsafe-finally" : "error",
+    // Disallow negating the left operand of relational operators
+    "no-unsafe-negation" : "error",
     // Require calls to `isNaN()` when checking for `NaN`
     "use-isnan" : "error",
     // Enforce valid JSDoc comments

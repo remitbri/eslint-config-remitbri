@@ -32,8 +32,10 @@ module.exports = {
     "consistent-this" : [ "error", "that" ],
     // Require file to end with single newline
     "eol-last" : "error",
+    // Require or disallow spacing between `function` identifiers and their invocations
+    "func-call-spacing" : [ "error", "never" ],
     // Require or disallow named `function` expressions
-    "func-names" : ["warn", "always"],
+    "func-names" : [ "warn", "always" ],
     // Enforce the consistent use of either `function` declarations or expressions
     "func-style" : [ "off", "declaration" ],
     // Disallow specified identifiers
@@ -132,7 +134,8 @@ module.exports = {
     // Disallow specified syntax
     "no-restricted-syntax" : "off",
     // Disallow spacing between `function` identifiers and their applications
-    "no-spaced-func" : "error",
+    // **deprecated** in ESLint v3.3.0
+    "no-spaced-func" : "off",
     // Disallow tabs in file
     "no-tabs" : "error",
     // Disallow ternary operators
@@ -180,6 +183,8 @@ module.exports = {
       before : false,
       after : true,
     }],
+    // Rquires object keys to be sorted
+    "sort-keys" : "off",
     // Variable Sorting
     "sort-vars" : "off",
     // Require Or Disallow Space Before Blocks
