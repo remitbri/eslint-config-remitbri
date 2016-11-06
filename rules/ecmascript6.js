@@ -56,6 +56,8 @@ module.exports = {
       destructuring : "any",
       ignoreReadBeforeAssign : false,
     }],
+    // Disallow `parseInt()` in favor of binary, octal, and hexadecimal literals
+    "prefer-numeric-literals" : "error",
     // Suggest using Reflect methods where applicable
     "prefer-reflect" : "error",
     // Suggest using the rest parameters instead of arguments

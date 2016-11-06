@@ -50,6 +50,14 @@ module.exports = {
       VariableDeclarator : 1,
       outerIIFEBody : 1,
       MemberExpression : 1,
+      FunctionDeclaration : {
+        parameters : 1,
+        body : 1,
+      },
+      FunctionExpression : {
+        parameters : 1,
+        body : 1,
+      },
     }],
     // Enforce the consistent use of either double or single quotes in JSX attributes
     "jsx-quotes" : [ "error", "prefer-double" ],
@@ -64,10 +72,17 @@ module.exports = {
       before : true,
       after : true,
     }],
+    // Enforce position of line comments
+    "line-comment-position" : "off",
     // Enforce consistent linebreak style
     "linebreak-style" : [ "error", "unix" ],
     // Require empty lines around comments
     "lines-around-comment" : "off",
+    // Require or disallow newlines around directives
+    "lines-around-directive" : [ "error", {
+      before : "never",
+      after : "always",
+    }],
     // Enforce a maximum depth that blocks can be nested
     "max-depth" : [ "warn", { max : 3 }],
     // Enforce a maximum line length
@@ -76,6 +91,8 @@ module.exports = {
       tabWidth : 4,
       ignoreTrailingComments : true,
       ignoreUrls : true,
+      ignoreStrings : true,
+      ignoreTemplateLiterals : true,
     }],
     // Enforce a maximum file length
     "max-lines" : "off",

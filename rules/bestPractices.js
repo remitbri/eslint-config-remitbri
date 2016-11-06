@@ -106,6 +106,8 @@ module.exports = {
     "no-proto" : "error",
     // Disallow Redeclaring Variables
     "no-redeclare" : "error",
+    // Disallow certain object properties
+    "no-restricted-properties" : "off",
     // Disallow Assignment in return Statement
     "no-return-assign" : [ "error", "always" ],
     // Disallow Script URLs

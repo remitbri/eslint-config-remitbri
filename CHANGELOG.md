@@ -7,11 +7,14 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 ### Added
 - `class-methods-use-this` new rule from eslint v3.4.0
 - `func-call-spacing` new rule from eslint v3.3.0
+- `line-comment-position` new rule from eslint v3.5.0
+- `lines-around-directive` new rule from eslint v3.5.0
 - `max-lines` new rule from eslint v2.12.0
 - `multiline-ternary` new rule from eslint v3.1.0
 - `no-global-assign` new rule from eslint v3.3.0
 - `no-mixed-operators` new rule from eslint v2.12.0
 - `no-prototype-builtins` new rule from eslint v2.11.0
+- `no-restricted-properties` new rule from eslint v3.5.0
 - `no-tabs` new rule from eslint v3.2.0
 - `no-template-curly-in-string` new rule from eslint v3.3.0
 - `no-unsafe-finally` new rule from eslint v2.9.0
@@ -20,6 +23,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `no-useless-rename` new rule from eslint v2.11.0
 - `object-curly-newline` new rule from eslint v2.12.0
 - `object-property-newline` new rule from eslint v2.10.0
+- `prefer-numeric-literals` new rule from eslint v3.5.0
 - `rest-spread-spacing` new rule from eslint v2.12.0
 - `sort-keys` new rule from eslint v3.3.0
 - `symbol-description` new rule from eslint v3.4.0
