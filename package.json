@@ -36,12 +36,12 @@
   },
   "homepage": "https://github.com/remitbri/eslint-config-remitbri#readme",
   "peerDependencies": {
-    "eslint": "^3.3.1"
+    "eslint": "^3.4.0"
   },
   "optionalPeerDependencies": {
     "eslint-plugin-react": "^5.2.2"
   },
   "devDependencies": {
-    "eslint": "^3.3.1"
+    "eslint": "^3.4.0"
   }
 }

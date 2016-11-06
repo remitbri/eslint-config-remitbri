@@ -70,6 +70,8 @@ module.exports = {
     "rest-spread-spacing" : [ "error", "never" ],
     // Import Sorting (
     "sort-imports" : "off",
+    // Require symbol description
+    "symbol-description" : "error",
     // Enforce Usage of Spacing in Template Strings
     "template-curly-spacing" : [ "error", "never" ],
     // Enforce spacing around the `*` in `yield*` expressions

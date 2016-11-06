@@ -87,8 +87,8 @@ module.exports = {
     "max-statements" : [ "off", { max : 10 }],
     // Enforce a maximum number of statements allowed per line
     "max-statements-per-line" : "off",
-    // Enforce newlines between operands of ternary expressions
-    "multiline-ternary" : "error",
+    // Enforce or disallow newlines between operands of ternary expressions
+    "multiline-ternary" : [ "error", "always" ],
     // Require constructor `function` names to begin with a capital letter
     "new-cap" : [ "error", {
       newIsCap : true,
@@ -153,30 +153,30 @@ module.exports = {
       multiline : true,
       minProperties : 2,
     }],
-    // Disallow or enforce spaces inside of curly braces in objects.
+    // Enforce consistent spacing inside braces
     "object-curly-spacing" : [ "error", "always", {
       objectsInObjects : false,
       arraysInObjects : false,
     }],
     // Enforce placing object properties on separate lines
     "object-property-newline" : "error",
-    // Require or Disallow One Variable Declaration per Scope
+    // Enforce variables to be declared either together or separately in functions
     "one-var" : [ "error", "never" ],
-    // Require or disallow an newline around variable declarations
+    // Require or disallow newlines around `var` declarations
     "one-var-declaration-per-line" : [ "error", "always" ],
-    // Operator Assignment Shorthand
+    // Require or disallow assignment operator shorthand where possible
     "operator-assignment" : [ "off", "always" ],
-    // Operator Linebreak
+    // Enforce consistent linebreak style for operators
     "operator-linebreak" : [ "error", "after" ],
-    // Enforce padding within blocks
+    // Require or disallow padding within blocks
     "padded-blocks" : [ "error", "never" ],
-    // Quoting Style for Property Names
+    // Require quotes around object literal property names
     "quote-props" : [ "error", "as-needed" ],
-    // Enforce Quote Style
+    // Enforce the consistent use of either backticks, double, or single quotes
     quotes : [ "error", "double" ],
-    // Require JSDoc comment
+    // Require JSDoc comments
     "require-jsdoc" : "off",
-    // Enforce or Disallow Semicolons
+    // Require or disallow semicolons instead of ASI
     semi : [ "error", "never" ],
     // Enforce spacing before and after semicolons
     "semi-spacing" : [ "error", {

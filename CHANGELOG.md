@@ -5,6 +5,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 
 ## [Unreleased]
 ### Added
+- `class-methods-use-this` new rule from eslint v3.4.0
 - `func-call-spacing` new rule from eslint v3.3.0
 - `max-lines` new rule from eslint v2.12.0
 - `multiline-ternary` new rule from eslint v3.1.0
@@ -21,6 +22,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `object-property-newline` new rule from eslint v2.10.0
 - `rest-spread-spacing` new rule from eslint v2.12.0
 - `sort-keys` new rule from eslint v3.3.0
+- `symbol-description` new rule from eslint v3.4.0
 - `unicode-bom` new rule from eslint v2.11.0
 - `react/jsx-filename-extension` new rule from eslint-plugin-react v5.2.0
 - `react/jsx-no-target-blank` new rule from eslint-plugin-react v5.1.0
