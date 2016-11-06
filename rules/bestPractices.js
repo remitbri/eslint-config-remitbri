@@ -132,6 +132,8 @@ module.exports = {
     "no-useless-concat" : "error",
     // Disallow unnecessary escape usage
     "no-useless-escape" : "error",
+    // Disallow redundant return statements
+    "no-useless-return" : "error",
     // Disallow use of the void operator.
     "no-void" : "error",
     // Disallow Warning Comments

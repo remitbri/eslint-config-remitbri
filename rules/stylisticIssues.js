@@ -61,6 +61,7 @@ module.exports = {
         parameters : 1,
         body : 1,
       },
+      CallExpression : { arguments : 1 },
     }],
     // Enforce the consistent use of either double or single quotes in JSX attributes
     "jsx-quotes" : [ "error", "prefer-double" ],
@@ -96,6 +97,7 @@ module.exports = {
       ignoreUrls : true,
       ignoreStrings : true,
       ignoreTemplateLiterals : true,
+      ignoreRegExpLiterals : true,
     }],
     // Enforce a maximum file length
     "max-lines" : "off",

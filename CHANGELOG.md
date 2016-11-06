@@ -23,6 +23,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `no-unsafe-negation` new rule from eslint v3.3.0
 - `no-useless-computed-key` new rule from eslint v2.9.0
 - `no-useless-rename` new rule from eslint v2.11.0
+- `no-useless-return` new rule from eslint v3.9.0
 - `object-curly-newline` new rule from eslint v2.12.0
 - `object-property-newline` new rule from eslint v2.10.0
 - `prefer-numeric-literals` new rule from eslint v3.5.0
@@ -45,9 +46,10 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `react/jsx-space-before-closing` option changed to always
 
 ### Deprecated
-- `no-native-reassign` replaced by  `no-global-assign’ in v3.3.0
+- `no-native-reassign` replaced by `no-global-assign’ in v3.3.0
 - `no-negated-in-lhs` replaced by `no-unsafe-negation’ in v3.3.0
-- `no-spaced-func` replaced by  `func-call-spacing’ in v3.3.0
+- `no-spaced-func` replaced by `func-call-spacing’ in v3.3.0
+- `prefer-reflect`
 
 
 ## [4.1.0] - 2016-04-22
