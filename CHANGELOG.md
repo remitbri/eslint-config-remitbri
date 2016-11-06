@@ -5,8 +5,10 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 
 ## [Unreleased]
 ### Added
+- New settings and rules for ES2017
 - `class-methods-use-this` new rule from eslint v3.4.0
 - `func-call-spacing` new rule from eslint v3.3.0
+- `func-name-matching` new rule from eslint v3.8.0
 - `line-comment-position` new rule from eslint v3.5.0
 - `lines-around-directive` new rule from eslint v3.5.0
 - `max-lines` new rule from eslint v2.12.0

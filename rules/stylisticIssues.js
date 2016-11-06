@@ -34,6 +34,9 @@ module.exports = {
     "eol-last" : [ "error", "always" ],
     // Require or disallow spacing between function identifiers and their invocations
     "func-call-spacing" : [ "error", "never" ],
+    // Require function names to match the name of the variable or property
+    // to which they are assigned
+    "func-name-matching" : "error",
     // Require or disallow named `function` expressions
     "func-names" : [ "warn", "always" ],
     // Enforce the consistent use of either `function` declarations or expressions
@@ -207,7 +210,11 @@ module.exports = {
     // Require Or Disallow Space Before Blocks
     "space-before-blocks" : [ "error", "always" ],
     // Require or disallow a space before function parenthesis
-    "space-before-function-paren" : [ "error", "never" ],
+    "space-before-function-paren" : [ "error", {
+      anonymous : "never",
+      named : "never",
+      asyncArrow : "never",
+    }],
     // Disallow or enforce spaces inside of parentheses
     "space-in-parens" : [ "error", "never" ],
     // Require spacing around infix operators

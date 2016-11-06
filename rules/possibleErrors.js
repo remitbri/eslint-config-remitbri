@@ -8,7 +8,13 @@
 module.exports = {
   rules : {
     // Require or disallow trailing commas
-    "comma-dangle" : [ "error", "always-multiline" ],
+    "comma-dangle" : [ "error", {
+      arrays : "always-multiline",
+      objects : "always-multiline",
+      imports : "always-multiline",
+      exports : "always-multiline",
+      functions : "never",
+    }],
     // Disallow assignment operators in conditional statements
     "no-cond-assign" : [ "error", "except-parens" ],
     // Disallow the use of `console`

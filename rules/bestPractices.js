@@ -146,7 +146,7 @@ module.exports = {
     // Require Variable Declarations to be at the top of their scope
     "vars-on-top" : "off",
     // Require IIFEs to be Wrapped
-    "wrap-iife" : [ "error", "outside" ],
+    "wrap-iife" : [ "error", "outside", { functionPrototypeMethods : true }],
     // Require or disallow Yoda Conditions
     yoda : [ "error", "never" ],
   },
