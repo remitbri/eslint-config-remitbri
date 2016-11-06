@@ -14,7 +14,7 @@ module.exports = {
     "global-require" : "error",
     // Enforce Callback Error Handling
     "handle-callback-err" : [ "error", "^(err|error|anySpecificError)$" ],
-    // Disallow Mixed Requires
+    // Disallow `require` calls to be mixed with regular variable declarations
     "no-mixed-requires" : [ "error", {
       grouping : false,
       allowCall : false,

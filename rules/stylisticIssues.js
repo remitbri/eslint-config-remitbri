@@ -30,9 +30,9 @@ module.exports = {
     "computed-property-spacing" : [ "error", "never" ],
     // Require Consistent This
     "consistent-this" : [ "error", "that" ],
-    // Require file to end with single newline
-    "eol-last" : "error",
-    // Require or disallow spacing between `function` identifiers and their invocations
+    // Require or disallow newline at the end of files
+    "eol-last" : [ "error", "always" ],
+    // Require or disallow spacing between function identifiers and their invocations
     "func-call-spacing" : [ "error", "never" ],
     // Require or disallow named `function` expressions
     "func-names" : [ "warn", "always" ],
@@ -98,15 +98,15 @@ module.exports = {
     "max-lines" : "off",
     // Enforce a maximum depth that callbacks can be nested
     "max-nested-callbacks" : [ "error", { max : 3 }],
-    // Enforce a maximum number of parameters in `function` definitions
+    // Enforce a maximum number of parameters in function definitions
     "max-params" : [ "warn", { max : 3 }],
-    // Enforce a maximum number of statements allowed in `function` blocks
+    // Enforce a maximum number of statements allowed in function blocks
     "max-statements" : [ "off", { max : 10 }],
     // Enforce a maximum number of statements allowed per line
     "max-statements-per-line" : "off",
     // Enforce or disallow newlines between operands of ternary expressions
     "multiline-ternary" : [ "error", "always" ],
-    // Require constructor `function` names to begin with a capital letter
+    // Require constructor names to begin with a capital letter
     "new-cap" : [ "error", {
       newIsCap : true,
       capIsNew : true,
@@ -114,7 +114,7 @@ module.exports = {
     }],
     // Require parentheses when invoking a constructor with no arguments
     "new-parens" : "error",
-    // Require or disallow an empty line after `var` declarations
+    // Require or disallow an empty line after variable declarations
     "newline-after-var" : "off",
     // Require an empty line before `return` statements
     "newline-before-return" : "off",
@@ -150,7 +150,7 @@ module.exports = {
     "no-plusplus" : [ "error", { allowForLoopAfterthoughts : true }],
     // Disallow specified syntax
     "no-restricted-syntax" : "off",
-    // Disallow spacing between `function` identifiers and their applications
+    // Disallow spacing between function identifiers and their applications
     // **deprecated** in ESLint v3.3.0
     "no-spaced-func" : "off",
     // Disallow tabs in file
@@ -179,7 +179,7 @@ module.exports = {
     "object-property-newline" : "error",
     // Enforce variables to be declared either together or separately in functions
     "one-var" : [ "error", "never" ],
-    // Require or disallow newlines around `var` declarations
+    // Require or disallow newlines around variable declarations
     "one-var-declaration-per-line" : [ "error", "always" ],
     // Require or disallow assignment operator shorthand where possible
     "operator-assignment" : [ "off", "always" ],
@@ -200,7 +200,7 @@ module.exports = {
       before : false,
       after : true,
     }],
-    // Rquires object keys to be sorted
+    // Require object keys to be sorted
     "sort-keys" : "off",
     // Variable Sorting
     "sort-vars" : "off",
@@ -210,7 +210,7 @@ module.exports = {
     "space-before-function-paren" : [ "error", "never" ],
     // Disallow or enforce spaces inside of parentheses
     "space-in-parens" : [ "error", "never" ],
-    // Require Spaces Around Infix Operators
+    // Require spacing around infix operators
     "space-infix-ops" : "error",
     // Require or disallow spaces before/after unary operators
     "space-unary-ops" : [ "error", {

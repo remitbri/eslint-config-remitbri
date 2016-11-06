@@ -7,7 +7,7 @@
 
 module.exports = {
   rules : {
-    // Enforce/Disallow Variable Initializations
+    // Require or disallow initialization in variable declarations
     "init-declarations" : "off",
     // Disallow Shadowing of Variables Inside of catch
     "no-catch-shadow" : "off",
@@ -17,7 +17,7 @@ module.exports = {
     "no-label-var" : "error",
     // Disallow specific global variables
     "no-restricted-globals" : [ "error", "event" ],
-    // Disallow Shadowing
+    // Disallow variable declarations from shadowing variables declared in the outer scope
     "no-shadow" : [ "error", {
       builtinGlobals : true,
       hoist : "functions",

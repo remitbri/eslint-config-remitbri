@@ -64,7 +64,7 @@ module.exports = {
     "no-global-assign" : "error",
     // Disallow the type conversion with shorter notations.
     "no-implicit-coercion" : "error",
-    // Disallow var and Named Functions in Global Scope
+    // Disallow variable and `function` declarations in the global scope
     "no-implicit-globals" : "error",
     // Disallow Implied eval()
     "no-implied-eval" : "error",
@@ -104,7 +104,7 @@ module.exports = {
     "no-param-reassign" : [ "error", { props : true }],
     // Disallow Use of __proto__
     "no-proto" : "error",
-    // Disallow Redeclaring Variables
+    // Disallow variable redeclaration
     "no-redeclare" : "error",
     // Disallow certain object properties
     "no-restricted-properties" : "off",

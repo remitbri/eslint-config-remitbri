@@ -39,7 +39,7 @@ module.exports = {
     "no-extra-semi" : "error",
     // Disallow reassigning `function` declarations
     "no-func-assign" : "error",
-    // Declarations `function` or `var` declarations in nested blocks
+    // Declarations variable or `function` declarations in nested blocks
     "no-inner-declarations" : [ "error", "both" ],
     // Disallow invalid regular expression strings in `RegExp` constructors
     "no-invalid-regexp" : "error",
@@ -72,6 +72,6 @@ module.exports = {
     // Enforce valid JSDoc comments
     "valid-jsdoc" : [ "off", { requireReturn : false }],
     // Enforce comparing `typeof` expressions against valid strings
-    "valid-typeof" : "error",
+    "valid-typeof" : [ "error", { requireStringLiterals : true }],
   },
 }
