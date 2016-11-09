@@ -32,6 +32,8 @@ module.exports = {
     "react/jsx-max-props-per-line" : [ "error", { maximum : 1 }],
     // No .bind() or Arrow Functions in JSX Props
     "react/jsx-no-bind" : "error",
+    // Prevent comments from being inserted as text nodes
+    "react/jsx-no-comment-textnodes" : "error",
     // Prevent duplicate properties in JSX
     "react/jsx-no-duplicate-props" : "error",
     // Prevent usage of unwrapped JSX strings
@@ -50,5 +52,7 @@ module.exports = {
     "react/jsx-uses-react" : "error",
     // Prevent variables used in JSX to be incorrectly marked as unused
     "react/jsx-uses-vars" : "error",
+    // Prevent missing parentheses around multiline JSX
+    "react/jsx-wrap-multilines" : "error",
   },
 }

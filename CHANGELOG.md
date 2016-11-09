@@ -34,6 +34,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `react/jsx-filename-extension` new rule from eslint-plugin-react v5.2.0
 - `react/jsx-no-target-blank` new rule from eslint-plugin-react v5.1.0
 - `react/no-comment-textnodes` new rule from eslint-plugin-react v5.2.0
+- `react/no-find-dom-node` new rule from eslint-plugin-react v6.0.0
 - `react/no-render-return-value` new rule from eslint-plugin-react v5.2.0
 - `react/require-optimization` new rule from eslint-plugin-react v5.2.0
 
@@ -50,6 +51,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `no-negated-in-lhs` replaced by `no-unsafe-negation’ in v3.3.0
 - `no-spaced-func` replaced by `func-call-spacing’ in v3.3.0
 - `prefer-reflect`
+- `react/require-extension`
 
 
 ## [4.1.0] - 2016-04-22

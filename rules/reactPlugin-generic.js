@@ -12,18 +12,18 @@ module.exports = {
     "react/display-name" : [ "error", { ignoreTranspilerName : false }],
     // Forbid certain propTypes
     "react/forbid-prop-types" : "error",
-    // Prevent comments from being inserted as text nodes
-    "react/no-comment-textnodes" : "error",
     // Prevent usage of dangerous JSX properties
     "react/no-danger" : "warn",
-    /** DEPRECATED **/ // Prevent usage of deprecated methods
-    /** DEPRECATED **/ "react/no-deprecated" : "error",
+    // Prevent usage of deprecated methods
+    "react/no-deprecated" : "error",
     // Prevent usage of setState in componentDidMount
     "react/no-did-mount-set-state" : "error",
     // Prevent usage of setState in componentDidUpdate
     "react/no-did-update-set-state" : "error",
     // Prevent direct mutation of this.state
     "react/no-direct-mutation-state" : "error",
+    // Prevent usage of findDOMNode
+    "react/no-find-dom-node" : "error",
     // Prevent usage of isMounted
     "react/no-is-mounted" : "error",
     // Prevent multiple component definition per file
@@ -45,7 +45,8 @@ module.exports = {
     // Prevent missing React when using JSX
     "react/react-in-jsx-scope" : "error",
     // Restrict file extensions that may be required
-    "react/require-extension" : [ "error", { extensions : [ ".js", ".jsx" ]}],
+    // ** deprecated ** in v6.0.0
+    "react/require-extension" : [ "off", { extensions : [ ".js", ".jsx" ]}],
     // Enforce React components to have a shouldComponentUpdate method
     "react/require-optimization" : "off",
     // Enforce ES5 or ES6 class for returning value in render function
@@ -59,7 +60,5 @@ module.exports = {
     "react/sort-comp" : "error",
     // Enforce propTypes declarations alphabetical sorting
     "react/sort-prop-types" : "off",
-    // Prevent missing parentheses around multiline JSX
-    "react/wrap-multilines" : "error",
   },
 }
