@@ -31,9 +31,11 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `sort-keys` new rule from eslint v3.3.0
 - `symbol-description` new rule from eslint v3.4.0
 - `unicode-bom` new rule from eslint v2.11.0
+- `react/forbid-component-props` new rule from eslint-plugin-react v6.1.0
 - `react/jsx-filename-extension` new rule from eslint-plugin-react v5.2.0
 - `react/jsx-no-target-blank` new rule from eslint-plugin-react v5.1.0
 - `react/no-comment-textnodes` new rule from eslint-plugin-react v5.2.0
+- `react/no-danger-with-children` new rule from eslint-plugin-react v6.1.0
 - `react/no-find-dom-node` new rule from eslint-plugin-react v6.0.0
 - `react/no-render-return-value` new rule from eslint-plugin-react v5.2.0
 - `react/require-optimization` new rule from eslint-plugin-react v5.2.0

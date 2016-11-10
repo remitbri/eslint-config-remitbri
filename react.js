@@ -25,6 +25,7 @@ module.exports = {
     "shared-node-browser" : true,
   },
   settings : {
+    createClass : "createClass", // Regex for Component Factory to use, default to "createClass"
     react : {
       pragma : "React",
     },

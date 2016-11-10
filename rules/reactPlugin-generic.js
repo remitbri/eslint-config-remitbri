@@ -10,10 +10,14 @@ module.exports = {
   rules : {
     // Prevent missing displayName in a React component definition
     "react/display-name" : [ "error", { ignoreTranspilerName : false }],
+    // Forbid certain props on Components
+    "react/forbid-component-props" : [ "error", { forbid : [ "className", "style" ]}],
     // Forbid certain propTypes
-    "react/forbid-prop-types" : "error",
+    "react/forbid-prop-types" : [ "error", { forbid : [ "any", "array", "object" ]}],
     // Prevent usage of dangerous JSX properties
     "react/no-danger" : "warn",
+    // Prevent problem with children and props.dangerouslySetInnerHTML
+    "react/no-danger-with-children" : "error",
     // Prevent usage of deprecated methods
     "react/no-deprecated" : "error",
     // Prevent usage of setState in componentDidMount
