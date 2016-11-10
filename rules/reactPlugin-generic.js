@@ -48,9 +48,6 @@ module.exports = {
     "react/prop-types" : "error",
     // Prevent missing React when using JSX
     "react/react-in-jsx-scope" : "error",
-    // Restrict file extensions that may be required
-    // ** deprecated ** in v6.0.0
-    "react/require-extension" : [ "off", { extensions : [ ".js", ".jsx" ]}],
     // Enforce React components to have a shouldComponentUpdate method
     "react/require-optimization" : "off",
     // Enforce ES5 or ES6 class for returning value in render function
