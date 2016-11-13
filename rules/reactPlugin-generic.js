@@ -14,6 +14,8 @@ module.exports = {
     "react/forbid-component-props" : [ "error", { forbid : [ "className", "style" ]}],
     // Forbid certain propTypes
     "react/forbid-prop-types" : [ "error", { forbid : [ "any", "array", "object" ]}],
+    // Prevent passing of children as props
+    "react/no-children-prop" : "error",
     // Prevent usage of dangerous JSX properties
     "react/no-danger" : "warn",
     // Prevent problem with children and props.dangerouslySetInnerHTML
@@ -40,6 +42,8 @@ module.exports = {
     "react/no-string-refs" : "error",
     // Prevent usage of unknown DOM property (no-unknown-property)
     "react/no-unknown-property" : "error",
+    // Prevent invalid characters from appearing in markup
+    "react/no-unescaped-entities" : "error",
     // Prevent definitions of unused prop types
     "react/no-unused-prop-types" : "error",
     // Enforce ES5 or ES6 class for React Components
