@@ -36,9 +36,9 @@ module.exports = {
     "func-call-spacing" : [ "error", "never" ],
     // Require function names to match the name of the variable or property
     // to which they are assigned
-    "func-name-matching" : "error",
+    "func-name-matching" : [ "error", "always", { includeCommonJSModuleExports : false }],
     // Require or disallow named `function` expressions
-    "func-names" : [ "warn", "always" ],
+    "func-names" : [ "warn", "as-needed" ],
     // Enforce the consistent use of either `function` declarations or expressions
     "func-style" : [ "off", "declaration" ],
     // Disallow specified identifiers

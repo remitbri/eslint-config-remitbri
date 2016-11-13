@@ -110,6 +110,8 @@ module.exports = {
     "no-restricted-properties" : "off",
     // Disallow Assignment in return Statement
     "no-return-assign" : [ "error", "always" ],
+    // Disallows unnecessary `return await`
+    "no-return-await" : "error",
     // Disallow Script URLs
     "no-script-url" : "error",
     // Disallow Self Assignment

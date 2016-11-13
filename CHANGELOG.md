@@ -17,6 +17,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `no-mixed-operators` new rule from eslint v2.12.0
 - `no-prototype-builtins` new rule from eslint v2.11.0
 - `no-restricted-properties` new rule from eslint v3.5.0
+- `no-return-await` new rule from eslint v3.10.0
 - `no-tabs` new rule from eslint v3.2.0
 - `no-template-curly-in-string` new rule from eslint v3.3.0
 - `no-unsafe-finally` new rule from eslint v2.9.0
@@ -44,6 +45,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - Amended documentation
 - Explicited default values for some rules (without value modification)
 - `array-bracket-spacing` option changed to always
+- `func-names` option changed to as-needed
 - `object-curly-spacing` option changed to always
 - `valid-jsdoc` rule turned off
 - `react/jsx-space-before-closing` option changed to always
