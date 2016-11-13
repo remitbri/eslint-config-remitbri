@@ -39,7 +39,9 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 - `react/no-danger-with-children` new rule from eslint-plugin-react v6.1.0
 - `react/no-find-dom-node` new rule from eslint-plugin-react v6.0.0
 - `react/no-render-return-value` new rule from eslint-plugin-react v5.2.0
+- `react/no-unused-prop-types` new rule from eslint-plugin-react v6.2.0
 - `react/require-optimization` new rule from eslint-plugin-react v5.2.0
+- `react/style-prop-object` new rule from eslint-plugin-react v6.2.0
 
 ### Changed
 - Amended documentation

@@ -40,10 +40,12 @@ module.exports = {
     "react/no-string-refs" : "error",
     // Prevent usage of unknown DOM property (no-unknown-property)
     "react/no-unknown-property" : "error",
+    // Prevent definitions of unused prop types
+    "react/no-unused-prop-types" : "error",
     // Enforce ES5 or ES6 class for React Components
     "react/prefer-es6-class" : [ "error", "always" ],
     // Enforce stateless React Components to be written as a pure function
-    "react/prefer-stateless-function" /** DEPRECATED **/ : "error",
+    "react/prefer-stateless-function" : "error",
     // Prevent missing props validation in a React component definition
     "react/prop-types" : "error",
     // Prevent missing React when using JSX
@@ -58,8 +60,16 @@ module.exports = {
       html : true,
     }],
     // Enforce component methods order
-    "react/sort-comp" : "error",
+    "react/sort-comp" : [ "error", { order : [
+      "type-annotations",
+      "static-methods",
+      "lifecycle",
+      "everything-else",
+      "render",
+    ]}],
     // Enforce propTypes declarations alphabetical sorting
     "react/sort-prop-types" : "off",
+    // Enforce style prop value being an object
+    "react/style-prop-object" : "error",
   },
 }
