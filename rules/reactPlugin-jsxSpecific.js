@@ -30,7 +30,7 @@ module.exports = {
     "react/jsx-key" : "error",
     // Limit maximum of props on a single line in JSX
     "react/jsx-max-props-per-line" : [ "error", { maximum : 1 }],
-    // No .bind() or Arrow Functions in JSX Props
+    // No `.bind()` or Arrow Functions in JSX Props
     "react/jsx-no-bind" : "error",
     // Prevent comments from being inserted as text nodes
     "react/jsx-no-comment-textnodes" : "error",
@@ -38,7 +38,7 @@ module.exports = {
     "react/jsx-no-duplicate-props" : "error",
     // Prevent usage of unwrapped JSX strings
     "react/jsx-no-literals" : "error",
-    // Prevent usage of unsafe target='_blank'
+    // Prevent usage of unsafe `target='_blank'`
     "react/jsx-no-target-blank" : "error",
     // Disallow undeclared variables in JSX
     "react/jsx-no-undef" : "error",
@@ -48,6 +48,12 @@ module.exports = {
     "react/jsx-sort-props" : "off",
     // Validate spacing before closing bracket in JSX
     "react/jsx-space-before-closing" : [ "error", "always" ],
+    // Validate whitespace in and around the JSX opening and closing brackets
+    "react/jsx-tag-spacing" : [ "error", {
+      closingSlash : "never",
+      beforeSelfClosing : "always",
+      afterOpening : "never",
+    }],
     // Prevent React to be incorrectly marked as unused
     "react/jsx-uses-react" : "error",
     // Prevent variables used in JSX to be incorrectly marked as unused
