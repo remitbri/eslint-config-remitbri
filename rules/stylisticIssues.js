@@ -158,7 +158,7 @@ module.exports = {
     // Disallow spacing between function identifiers and their applications
     // **deprecated** in ESLint v3.3.0
     "no-spaced-func" : "off",
-    // Disallow tabs in file
+    // Disallow all tabs
     "no-tabs" : "error",
     // Disallow ternary operators
     "no-ternary" : "off",
