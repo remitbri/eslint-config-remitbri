@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
-## [Unreleased]
+## [5.0.0] - 2016-11-20
 ### Added
 - New settings and rules for ES2017
 - `class-methods-use-this` new rule from eslint v3.4.0
