@@ -1,7 +1,7 @@
 module.exports = {
   root : true,
   extends : [
-    "eslint-config-remitbri/es5",
+    "eslint-config-remitbri/es6",
     "eslint-config-remitbri/node",
   ]
 }

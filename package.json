@@ -41,6 +41,9 @@
   "optionalPeerDependencies": {
     "eslint-plugin-react": ">=6.7.1"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "devDependencies": {
     "eslint": ">=3.10.2"
   }
