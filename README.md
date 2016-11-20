@@ -50,6 +50,17 @@ This
 }
 ```
 
+## es2017
+This
+ - extends the `es6` configuration
+ - add rules related to es2017
+
+```json
+{
+  "extends" : "remitbri/es2017"
+}
+```
+
 ## node
 This
  - adds rules related to Node.js
@@ -82,7 +93,9 @@ This
   "extends" : "remitbri/ie8"
 }
 ```
+
 ## react
+This is the default configuration.
 This
  - extends the `es6` and `node` configurations
  - adds rules related to [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
@@ -94,5 +107,3 @@ This
   "extends" : "remitbri/react"
 }
 ```
-## es7
-Since v2.0.0, the `es7` configuration has moved to its own module, [`eslint-config-remitbri-es7`](https://github.com/remitbri/eslint-config-remitbri-es7).
