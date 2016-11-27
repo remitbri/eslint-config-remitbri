@@ -147,6 +147,8 @@ module.exports = {
     "no-with" : "error",
     // Require Radix Parameter
     radix : [ "error", "as-needed" ],
+    // Disallow async functions which have no `await` expression
+    "require-await" : "error",
     // Require Variable Declarations to be at the top of their scope
     "vars-on-top" : "off",
     // Require IIFEs to be Wrapped

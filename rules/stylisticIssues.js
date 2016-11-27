@@ -19,6 +19,8 @@ module.exports = {
     "brace-style" : [ "error", "1tbs", { allowSingleLine : true }],
     // Require Camelcase
     camelcase : [ "error", { properties : "always" }],
+    // Enforce or disallow capitalization of the first letter of a comment
+    "capitalized-comments" : "off",
     // Enforces spacing around commas
     "comma-spacing" : [ "error", {
       before : false,
