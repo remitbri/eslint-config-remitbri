@@ -3,9 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
+## [5.1.0] - 2016-11-27
 ### Added
 - `capitalized-comments` new rule from eslint  v3.11.0
 - `require-await` new rule from eslint  v3.11.0
+
 
 ## [5.0.0] - 2016-11-20
 ### Added
