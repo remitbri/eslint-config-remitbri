@@ -14,6 +14,8 @@ module.exports = {
     "react/forbid-component-props" : [ "error", { forbid : [ "className", "style" ]}],
     // Forbid certain propTypes
     "react/forbid-prop-types" : [ "error", { forbid : [ "any", "array", "object" ]}],
+    // Prevent usage of Array index in keys
+    "react/no-array-index-key" : "error",
     // Prevent passing of children as props
     "react/no-children-prop" : "error",
     // Prevent usage of dangerous JSX properties
@@ -52,6 +54,8 @@ module.exports = {
     "react/prefer-stateless-function" : "error",
     // Prevent missing props validation in a React component definition
     "react/prop-types" : "error",
+    // Enforce a defaultProps definition for every prop that is not a required prop
+    "require-default-props" : "error",
     // Prevent missing React when using JSX
     "react/react-in-jsx-scope" : "error",
     // Enforce React components to have a shouldComponentUpdate method

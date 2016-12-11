@@ -5,10 +5,13 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 
 ### Added
  - `no-await-in-loop` new rule from eslint v3.12.0
+ - `react/no-array-index-key` new rule from eslint-react-plugin v6.8.0
+ - `react/require-default-props` new rule from eslint-react-plugin v6.8.0
 
 ### Changed
  - new options for `indent` rule from eslint v3.12.0
  - explicit default for `operator-linebreak` rule
+
 
 ## [5.1.0] - 2016-11-27
 ### Added
