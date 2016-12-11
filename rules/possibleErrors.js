@@ -15,6 +15,8 @@ module.exports = {
       exports : "always-multiline",
       functions : "never",
     }],
+    // Disallow `await` inside of loops
+    "no-await-in-loop" : "error",
     // Disallow assignment operators in conditional statements
     "no-cond-assign" : [ "error", "except-parens" ],
     // Disallow the use of `console`

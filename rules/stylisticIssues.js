@@ -64,6 +64,8 @@ module.exports = {
         body : 1,
       },
       CallExpression : { arguments : 1 },
+      ArrayExpression : 1,
+      ObjectExpression : 1,
     }],
     // Enforce the consistent use of either double or single quotes in JSX attributes
     "jsx-quotes" : [ "error", "prefer-double" ],
@@ -191,7 +193,7 @@ module.exports = {
     // Require or disallow assignment operator shorthand where possible
     "operator-assignment" : [ "off", "always" ],
     // Enforce consistent linebreak style for operators
-    "operator-linebreak" : [ "error", "after" ],
+    "operator-linebreak" : [ "error", "after", { overrides : {}}],
     // Require or disallow padding within blocks
     "padded-blocks" : [ "error", "never" ],
     // Require quotes around object literal property names

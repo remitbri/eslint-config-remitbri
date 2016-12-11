@@ -3,10 +3,17 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
+### Added
+ - `no-await-in-loop` new rule from eslint v3.12.0
+
+### Changed
+ - new options for `indent` rule from eslint v3.12.0
+ - explicit default for `operator-linebreak` rule
+
 ## [5.1.0] - 2016-11-27
 ### Added
-- `capitalized-comments` new rule from eslint  v3.11.0
-- `require-await` new rule from eslint  v3.11.0
+- `capitalized-comments` new rule from eslint v3.11.0
+- `require-await` new rule from eslint v3.11.0
 
 
 ## [5.0.0] - 2016-11-20
