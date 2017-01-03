@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 
+## [5.2.2] - 2017-01-03
 ### Added
  - new test for react plugin rules name
 
