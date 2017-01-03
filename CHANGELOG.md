@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
+## [5.2.1] - 2017-01-03
 ### Changed
  - eslint upgraded to v3.12.2
  - fixed name of `react/require-default-props` rule
