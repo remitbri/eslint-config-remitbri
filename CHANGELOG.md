@@ -5,6 +5,7 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 
 ### Changed
  - eslint upgraded to v3.12.2
+ - fixed name of `react/require-default-props` rule
 
 
 ## [5.2.0] - 2016-12-11
