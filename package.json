@@ -4,8 +4,9 @@
   "description": "Shareable ESLint configurations, by & for @remitbri. React-friendly.",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore .",
-    "test": "node pretest.js && npm run lint",
+    "lint": "eslint --ignore-path .gitignore . --quiet",
+    "test:react": "node pluginReactTest.js",
+    "test": "node pretest.js && npm run lint && npm run test:react",
     "deploy": "npm test && npm publish"
   },
   "repository": {
