@@ -12,6 +12,10 @@ module.exports = {
     "react/display-name" : [ "error", { ignoreTranspilerName : false }],
     // Forbid certain props on Components
     "react/forbid-component-props" : [ "error", { forbid : [ "className", "style" ]}],
+    // Forbid certain elements
+    "react/forbid-elements" : "off",
+    // Forbid foreign propTypes
+    "react/forbid-foreign-prop-types" : "off",
     // Forbid certain propTypes
     "react/forbid-prop-types" : [ "error", { forbid : [ "any", "array", "object" ]}],
     // Prevent usage of Array index in keys
@@ -79,5 +83,7 @@ module.exports = {
     "react/sort-prop-types" : "off",
     // Enforce style prop value being an object
     "react/style-prop-object" : "error",
+    // Prevent void DOM elements (e.g. `<img />`, `<br />`) from receiving children
+    "react/void-dom-elements-no-children" : "error",
   },
 }

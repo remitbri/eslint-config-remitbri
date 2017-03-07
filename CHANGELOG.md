@@ -11,9 +11,13 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
  - `prefer-destructuring` new rule from eslint v3.13.0
  - `prefer-promise-reject-errors` new rule from eslint v3.14.0
  - `template-tag-spacing` new rule from eslint v3.15.0
+ - `react/forbid-elements` new rule from eslint-plugin-react v6.10.0
+ - `react/forbid-foreign-prop-types` new rule from eslint-plugin-react v6.10.0
+ - `react/void-dom-elements-no-children` new rule from eslint-plugin-react v6.10.0
 
 ### Changed
  - eslint upgraded to v3.17.1
+ - eslint-plugin-react upgraded to v6.10.0
  - `ignoreRestSiblings` option added to `no-unused-vars`
 
 
