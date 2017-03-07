@@ -4,6 +4,19 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 
+### Added
+ - `no-compare-neg-zero` new rule from eslint v3.17.0
+ - `no-multi-assign` new rule from eslint v3.14.0
+ - `nonblock-statement-body-position` new rule from eslint v3.17.0
+ - `prefer-destructuring` new rule from eslint v3.13.0
+ - `prefer-promise-reject-errors` new rule from eslint v3.14.0
+ - `template-tag-spacing` new rule from eslint v3.15.0
+
+### Changed
+ - eslint upgraded to v3.17.1
+ - `ignoreRestSiblings` option added to `no-unused-vars`
+
+
 ## [5.2.2] - 2017-01-03
 ### Added
  - new test for react plugin rules name

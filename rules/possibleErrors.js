@@ -17,6 +17,8 @@ module.exports = {
     }],
     // Disallow `await` inside of loops
     "no-await-in-loop" : "error",
+    // Disallow comparing against -0
+    "no-compare-neg-zero" : "error",
     // Disallow assignment operators in conditional statements
     "no-cond-assign" : [ "error", "except-parens" ],
     // Disallow the use of `console`

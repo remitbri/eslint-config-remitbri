@@ -145,6 +145,8 @@ module.exports = {
     }],
     // No `with` statements
     "no-with" : "error",
+    // Require using Error objects as Promise rejection reasons
+    "prefer-promise-reject-errors" : [ "error", { allowEmptyReject : true }],
     // Require Radix Parameter
     radix : [ "error", "as-needed" ],
     // Disallow async functions which have no `await` expression

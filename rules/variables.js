@@ -34,11 +34,13 @@ module.exports = {
     "no-unused-vars" : [ "error", {
       vars : "all",
       args : "after-used",
+      ignoreRestSiblings : false,
     }],
     // Disallow Early Use
     "no-use-before-define" : [ "error", {
       functions : true,
       classes : true,
+      variables : true,
     }],
   },
 }

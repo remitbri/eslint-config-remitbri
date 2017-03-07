@@ -56,6 +56,14 @@ module.exports = {
       destructuring : "any",
       ignoreReadBeforeAssign : false,
     }],
+    // Prefer destructuring from arrays and objects
+    "prefer-destructuring" : [ "error",
+      {
+        array : true,
+        object : true,
+      },
+      { enforceForRenamedProperties : false },
+    ],
     // Disallow `parseInt()` in favor of binary, octal, and hexadecimal literals
     "prefer-numeric-literals" : "error",
     // Suggest using Reflect methods where applicable

@@ -143,6 +143,8 @@ module.exports = {
     "no-mixed-operators" : "error",
     // Disallow mixed spaces and tabs for indentation
     "no-mixed-spaces-and-tabs" : "error",
+    // Disallow use of Chained Assignment Expressions
+    "no-multi-assign" : "error",
     // Disallows multiple empty lines
     "no-multiple-empty-lines" : [ "error", {
       max : 3,
@@ -174,6 +176,8 @@ module.exports = {
     "no-unneeded-ternary" : "error",
     // Disallow whitespace before properties
     "no-whitespace-before-property" : "error",
+    // Enforce the location of single-line statements
+    "nonblock-statement-body-position" : "off",
     // Enforce consistent line breaks inside braces
     "object-curly-newline" : [ "off", {
       multiline : true,
@@ -235,6 +239,8 @@ module.exports = {
       exceptions : [ "-", "+" ],
       markers : ["/"],
     }],
+    // Require or disallow spacing between template tags and their literals
+    "template-tag-spacing" : [ "error", "never" ],
     // Require or disallow the Unicode Byte Order Mark (BOM)
     "unicode-bom" : [ "error", "never" ],
     // Require Regex Literals to be Wrapped
