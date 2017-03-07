@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
 
+## [5.3.0] - 2017-03-08
 ### Added
  - `no-compare-neg-zero` new rule from eslint v3.17.0
  - `no-multi-assign` new rule from eslint v3.14.0
